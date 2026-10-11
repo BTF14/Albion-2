@@ -1,0 +1,112 @@
+{
+  "$schema": "https://skills.sh/schema.json",
+  "name": "albion-farm-economy-tracker-skills",
+  "version": "1.0.0",
+  "description": "Registro oficial de Agent Skills integradas en el proyecto desde skills.sh, Vercel Labs, Anthropic y el marco MoureDev",
+  "skills": [
+    {
+      "id": "react-best-practices",
+      "path": "skills/react-best-practices/SKILL.md",
+      "origin": "skills.sh/vercel-labs/vercel-react-best-practices",
+      "installs": "20.9k+",
+      "subagent": "frontend-implementer",
+      "category": "performance-and-rendering"
+    },
+    {
+      "id": "web-design-guidelines",
+      "path": "skills/web-design-guidelines/SKILL.md",
+      "origin": "skills.sh/anthropics/web-design-guidelines",
+      "installs": "100k+",
+      "subagent": "frontend-implementer",
+      "category": "ui-and-accessibility"
+    },
+    {
+      "id": "karpathy-guidelines",
+      "path": "skills/karpathy-guidelines/SKILL.md",
+      "origin": "skills.sh/karpathy-coding-guidelines",
+      "installs": "50k+",
+      "subagent": "orchestrator",
+      "category": "engineering-discipline"
+    },
+    {
+      "id": "local-first-storage",
+      "path": "skills/local-first-storage/SKILL.md",
+      "origin": "skills.sh/local-first-architecture",
+      "installs": "15k+",
+      "subagent": "domain-architect",
+      "category": "persistence-and-offline"
+    },
+    {
+      "id": "spec-driven-development",
+      "path": "skills/spec-driven-development/SKILL.md",
+      "origin": "skills.sh/mouredev/hello-sdd",
+      "installs": "official",
+      "subagent": "sdd-verifier",
+      "category": "spec-driven-development"
+    },
+    {
+      "id": "gentleman-clean-architecture",
+      "path": "skills/gentleman-clean-architecture/SKILL.md",
+      "origin": "skills.sh/gentleman-programming/clean-architecture",
+      "installs": "official",
+      "subagent": "domain-architect",
+      "category": "architecture-and-domain"
+    },
+    {
+      "id": "security-audit",
+      "path": "skills/security-audit/SKILL.md",
+      "origin": "skills.sh/cloudflare/security-audit-skill",
+      "installs": "official",
+      "subagent": "security-critic",
+      "category": "security-and-vulnerability"
+    },
+    {
+      "id": "chrome-devtools-automation",
+      "path": "skills/chrome-devtools-automation/SKILL.md",
+      "origin": "skills.sh/modelcontextprotocol/chrome-devtools",
+      "installs": "official",
+      "subagent": "frontend-implementer",
+      "category": "browser-and-debugging"
+    },
+    {
+      "id": "constitution-compliance",
+      "path": "skills/constitution-compliance/SKILL.md",
+      "origin": "local/governance",
+      "installs": "internal",
+      "subagent": "orchestrator",
+      "category": "governance-and-rules"
+    },
+    {
+      "id": "memory-lifecycle",
+      "path": "skills/memory-lifecycle/SKILL.md",
+      "origin": "local/cognitive-architecture",
+      "installs": "internal",
+      "subagent": "orchestrator",
+      "category": "memory-and-adrs"
+    },
+    {
+      "id": "performance-optimization",
+      "path": "skills/performance-optimization/SKILL.md",
+      "origin": "local/vite-ergonomics",
+      "installs": "internal",
+      "subagent": "frontend-implementer",
+      "category": "performance-and-bundling"
+    },
+    {
+      "id": "albion-game-mechanics",
+      "path": "skills/albion-mechanics/SKILL.md",
+      "origin": "local/game-knowledge",
+      "installs": "internal",
+      "subagent": "domain-architect",
+      "category": "business-domain"
+    },
+    {
+      "id": "e2e-testing-framework",
+      "path": "skills/e2e/SKILL.md",
+      "origin": "skills.sh/tester-army/e2e",
+      "installs": "official",
+      "subagent": "qa-evaluator",
+      "category": "e2e-and-agentic-testing"
+    }
+  ]
+}

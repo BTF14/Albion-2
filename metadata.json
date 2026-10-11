@@ -1,0 +1,6 @@
+{
+  "name": "Albion Online - Gestor de Cultivos, Hierbas y Ganadería",
+  "description": "Calculadora integral de agricultura, crianza de monturas, crafteo de equipo con maestría de la Tabla del Destino, refinado de recursos brutos, encantamiento, libro mayor de ventas y mercado negro, gestión de casas y trabajadores, arbitraje y optimizador de foco para Albion Online.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

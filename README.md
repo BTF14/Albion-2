@@ -1,11 +1,33 @@
-<div align="center">
+# Albion Farm & Economy Tracker
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Suite profesional integral de gestión económica, agricultura, ganadería, refinado, crafteo, transmutación y arbitraje para **Albion Online**.
 
-  <h1>Built with AI Studio</h2>
+Diseñado bajo la arquitectura **Clean Architecture / Gentleman Programming (Alan Buscaglia)** y auditado bajo el estándar de ciberseguridad **Cloudflare Security Audit**.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 📖 Documentación Oficial del Proyecto
+- **Manual Maestro de Arquitectura y Módulos**: Consulta obligatoria en [`/PROJECT_DOCUMENTATION.md`](./PROJECT_DOCUMENTATION.md).
+- **Compendio Oficial de Mecánicas de Albion Online**: [`/ALBION_KNOWLEDGE.md`](./ALBION_KNOWLEDGE.md).
+- **Roadmap y Reglas Inviolables del Agente**: [`/AGENTS.md`](./AGENTS.md).
+- **Framework de Auditoría de Seguridad Cloudflare**: [`/skills/security-audit/`](./skills/security-audit/).
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🚀 Pila Tecnológica
+- **Frontend**: React 19 + TypeScript (Strict Mode).
+- **Estilos**: Tailwind CSS 4.0 con badges oficiales de Albion y números tabulares (`tabular-nums`).
+- **Bundler**: Vite 6 con partición de chunks (`vendor-react`, `vendor-icons`, `vendor-charts`).
+- **Iconografía**: `lucide-react`.
+- **Pruebas**: Node.js Test Runner nativo (`npm run audit:test`).
 
-</div>
+## 🛠️ Comandos de Ejecución
+```bash
+# Iniciar servidor de desarrollo (puerto 3000)
+npm run dev
+
+# Compilar para producción
+npm run build
+
+# Validar tipos y sintaxis
+npm run lint
+
+# Ejecutar auditoría de seguridad Cloudflare
+npm run audit:test
+```

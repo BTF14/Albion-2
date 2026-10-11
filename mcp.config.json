@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-config.json",
+  "mcpServers": {
+    "chrome-devtools-puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "description": "Servidor MCP oficial de Chrome DevTools / Puppeteer (MoureDev Día 2) para navegación visual, inspección de consola de JavaScript, clics y capturas de pantalla"
+    },
+    "chrome-devtools-local-audit": {
+      "command": "node",
+      "args": ["scripts/chrome-devtools-audit.cjs"],
+      "description": "Inspector headless de estado HTTP, montaje de DOM y red en puerto 3000"
+    },
+    "albion-data-service": {
+      "command": "node",
+      "args": ["scripts/mcp-albion-data.cjs"],
+      "description": "Servidor MCP para consultar cotizaciones y estadísticas de mercado de Albion Data Project (Europa, América, Asia)"
+    },
+    "sdd-spec-engine": {
+      "command": "node",
+      "args": ["skills/spec-driven-development/scripts/validate-specs.cjs"],
+      "description": "Servidor MCP de validación y gestión de especificaciones formales Spec-Driven Development (SDD)"
+    },
+    "cloudflare-security-audit": {
+      "command": "node",
+      "args": ["skills/security-audit/validate-findings.cjs"],
+      "description": "Servidor MCP de auditoría de seguridad Cloudflare para escanear Prototype Pollution y vectores adversariales"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./src", "./specs", "./memories"],
+      "description": "Servidor MCP de acceso seguro y acotado al sistema de archivos del proyecto"
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git", "."],
+      "description": "Servidor MCP de control de versiones Git para trazabilidad atómica de especificaciones"
+    }
+  }
+}

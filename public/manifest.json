@@ -1,0 +1,30 @@
+{
+  "name": "Albion Farm & Economy Tracker",
+  "short_name": "Albion Tracker",
+  "description": "Calculadora integral de agricultura, crianza de monturas, crafteo, refinado, mercado negro y optimizador de foco para Albion Online.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["games", "utilities", "productivity"]
+}
