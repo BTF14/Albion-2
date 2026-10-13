@@ -6,6 +6,7 @@ import { PersistedLabourerConfig } from './labourers';
 import { BlackMarketItemRecord } from './craftingSalesLedger';
 import { StoredGuildIslandConfig } from './guildIsland';
 import { RedZoneTransportInput } from './redZoneTransport';
+import { FinancialGoal } from './goals';
 
 /**
  * Estructura oficial del archivo de Respaldo Completo de Datos (.json)
@@ -49,6 +50,7 @@ export interface AlbionFullBackupData {
     warehouseStoredItems?: Record<string, unknown>[];
     warehouseMountId?: string;
     blackMarketConfig?: Record<string, unknown>;
+    financialGoals?: FinancialGoal[];
   };
 }
 

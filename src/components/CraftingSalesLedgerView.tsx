@@ -17,8 +17,10 @@ import {
   Layers,
   Sparkles,
   HelpCircle,
+  Clock,
 } from 'lucide-react';
 import { useCraftingSalesLedger } from '../hooks/useCraftingSalesLedger';
+import { MarketOrdersModal } from './MarketOrdersModal';
 import { NumericInput } from './NumericInput';
 import { AlbionItemBadge } from './AlbionItemBadge';
 import { formatSilver } from '../utils/albionColors';
@@ -56,6 +58,7 @@ export const CraftingSalesLedgerView: React.FC = () => {
   } = useCraftingSalesLedger();
 
   const [isFormOpen, setIsFormOpen] = useState<boolean>(false);
+  const [isMarketOrdersOpen, setIsMarketOrdersOpen] = useState<boolean>(false);
   const [filterDestination, setFilterDestination] = useState<'all' | 'black_market' | 'royal_city'>('all');
   const [searchTerm, setSearchTerm] = useState<string>('');
   const [sortBy, setSortBy] = useState<'newest' | 'profit' | 'roi'>('newest');
@@ -243,6 +246,16 @@ export const CraftingSalesLedgerView: React.FC = () => {
                 <span>Exportar CSV</span>
               </button>
             )}
+
+            <button
+              type="button"
+              onClick={() => setIsMarketOrdersOpen(true)}
+              className="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-500/30 font-bold text-xs rounded-lg transition-all flex items-center gap-1.5 cursor-pointer shadow-sm"
+              title="Monitorear órdenes de compra y venta activas de 30 días"
+            >
+              <Clock size={14} className="text-amber-400" />
+              <span>Órdenes (30 Días)</span>
+            </button>
 
             <button
               type="button"
@@ -800,6 +813,36 @@ export const CraftingSalesLedgerView: React.FC = () => {
           </div>
         )}
       </div>
+
+      {/* Modal Monitor de Caducidad de Órdenes de Mercado (30 Días) */}
+      <MarketOrdersModal
+        isOpen={isMarketOrdersOpen}
+        onClose={() => setIsMarketOrdersOpen(false)}
+        onTransferToLedger={(order) => {
+          addRecord({
+            itemId: `order_sold_${Date.now()}`,
+            itemName: order.itemName,
+            tier: order.tier,
+            enchantment: 0,
+            quality: 'good',
+            batchCount: order.quantity,
+            productionCostTotal: 0, // Venta directa
+            unitProductionCost: 0,
+            destination: 'royal_city',
+            destinationCityName: order.cityId.replace('_', ' '),
+            unitSalePrice: order.unitPrice,
+            grossRevenue: order.unitPrice * order.quantity,
+            marketTaxPercent: hasPremium ? 4 : 8,
+            setupFeePercent: 2.5,
+            totalMarketFees: Math.round(order.unitPrice * order.quantity * (hasPremium ? 0.065 : 0.105)),
+            netRevenue: Math.round(order.unitPrice * order.quantity * (1 - (hasPremium ? 0.065 : 0.105))),
+            netProfit: Math.round(order.unitPrice * order.quantity * (1 - (hasPremium ? 0.065 : 0.105))),
+            profitPerUnit: Math.round(order.unitPrice * (1 - (hasPremium ? 0.065 : 0.105))),
+            roiPercent: 100,
+            notes: 'Completada y transferida desde Monitor de Órdenes',
+          });
+        }}
+      />
     </div>
   );
 };

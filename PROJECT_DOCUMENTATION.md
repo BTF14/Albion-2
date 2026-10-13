@@ -75,6 +75,8 @@
 | **25** | Taller de Pesca, Fileteado & Salsas | `fishing_sauces` | `fishingSauces.ts`, `calculateFishingSaucesEconomy.ts` | `useFishingSaucesEconomy.ts` | `FishChoppingSaucesView.tsx` | Arbitraje de pesca cruda vs picado vs salsas (.1, .2, .3), aprovechamiento de remanentes, umbral de algas y botón oficial de dar resultado. |
 | **26** | Sincronización Nube & Vercel | `cloud_sync` | `cloudSync.ts`, `cloudSyncEngine.ts` | `useCloudSync.ts` | `CloudSyncModal.tsx` | Sincronización asíncrona multidispositivo (PC/móvil) con resolución de conflictos, tolerancia offline y hosting Vercel. |
 | **27** | Bonos de Ciudad & Biomas (+10%) | `guide` | `items.ts`, `ALBION_KNOWLEDGE.md` | `usePriceMemory.ts` | `CityBonusesGuide.tsx` | Guía de biomas oficiales, bonos de cosecha (+10%), alimentos favoritos y especializaciones de refinado/crafteo de las 7 Ciudades Reales. |
+| **28** | Metas & Presupuesto de Siembra | `goals` | `goals.ts`, `calculateGoalProgress.ts`, `calculateSeedBudget.ts` | `useFinancialGoals.ts` | `FinancialGoalsView.tsx` | Progreso hacia Premium, Mamut de transporte e islas gremiales, y presupuesto de siembra masiva (capital de trabajo). |
+| **29** | Sets, Re-Gear & Bajas PvP | `regear` | `loadouts.ts`, `calculateLoadoutRegear.ts` | `useLoadoutManager.ts` | `LoadoutsRegearView.tsx` | Configuración de sets de batalla y transporte, coste de reposición por muerte y fondo de liquidez para 3x, 5x y 10x bajas. |
 
 ---
 
@@ -104,6 +106,9 @@ Toda interacción con `localStorage` debe incorporar validadores defensivos (ign
 | `albion_fishing_sauces_config_v1` | Configuración activa del taller de salsas y fileteado | Objeto `FishingSaucesInput` |
 | `albion_cloud_sync_config_v1` | Configuración activa de sincronización en la nube | Objeto `CloudSyncConfig` |
 | `albion_cloud_sync_state_v1` | Estado de sincronización en la nube (último sync, hash) | Objeto `CloudSyncState` |
+| `albion_financial_goals_v1` | Metas financieras del jugador y objetivos de Albion | Array de `FinancialGoal` |
+| `albion_loadouts_regear_v1` | Perfiles de sets y presupuesto de bajas PvP | Array de `LoadoutProfile` |
+
 
 ---
 

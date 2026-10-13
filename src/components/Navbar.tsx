@@ -41,7 +41,7 @@ export const NAV_CATEGORIES: CategoryDef[] = [
       'logger', 'history', 'calendar', 'todo', 'mastery', 'focus_optimizer', 'focus_portfolio',
       'mounts', 'butcher', 'labourers', 'guild_island', 'crafting_equipment', 'refining',
       'transmutation', 'enchanting', 'sales_ledger', 'black_market_simulator', 'transport',
-      'warehouse_logistics', 'red_zone_transport', 'silver_audit', 'analytics', 'simulator', 'value_added', 'fishing_sauces', 'guide'
+      'warehouse_logistics', 'red_zone_transport', 'silver_audit', 'analytics', 'simulator', 'value_added', 'fishing_sauces', 'goals', 'regear', 'guide'
     ],
     badgeColor: 'border-slate-700 bg-slate-800 text-slate-200',
   },
@@ -49,7 +49,7 @@ export const NAV_CATEGORIES: CategoryDef[] = [
     id: 'farm',
     name: 'Granja & Ganadería',
     icon: '🌾',
-    tabs: ['logger', 'history', 'calendar', 'todo', 'mounts', 'butcher', 'simulator'],
+    tabs: ['logger', 'history', 'calendar', 'todo', 'goals', 'mounts', 'butcher', 'simulator'],
     badgeColor: 'border-amber-500/50 bg-amber-500/20 text-amber-300',
   },
   {
@@ -756,6 +756,36 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               🐟 Pesca & Salsas
+            </button>
+          )}
+
+          {activeTabsList.includes('goals') && (
+            <button
+              type="button"
+              id="nav-tab-goals"
+              onClick={() => onSelectTab('goals')}
+              className={`px-4 py-2 rounded-lg transition-all flex items-center gap-2 whitespace-nowrap ${
+                activeTab === 'goals'
+                  ? 'bg-amber-500 text-slate-950 font-bold shadow-md'
+                  : 'text-amber-400 hover:text-amber-300 hover:bg-slate-900'
+              }`}
+            >
+              🎯 Metas & Presupuesto
+            </button>
+          )}
+
+          {activeTabsList.includes('regear') && (
+            <button
+              type="button"
+              id="nav-tab-regear"
+              onClick={() => onSelectTab('regear')}
+              className={`px-4 py-2 rounded-lg transition-all flex items-center gap-2 whitespace-nowrap ${
+                activeTab === 'regear'
+                  ? 'bg-red-600 text-white font-bold shadow-md'
+                  : 'text-red-400 hover:text-red-300 hover:bg-slate-900'
+              }`}
+            >
+              🛡️ Sets & Re-Gear
             </button>
           )}
 

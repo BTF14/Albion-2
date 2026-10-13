@@ -31,6 +31,8 @@ import { FocusOptimizerDashboard } from './components/FocusOptimizerDashboard';
 import { AnalyticsDashboard } from './components/AnalyticsDashboard';
 import { ValueAddedCalculator } from './components/ValueAddedCalculator';
 import { FishChoppingSaucesView } from './components/FishChoppingSaucesView';
+import { FinancialGoalsView } from './components/FinancialGoalsView';
+import { LoadoutsRegearView } from './components/LoadoutsRegearView';
 import { MountsBreedingView } from './components/MountsBreedingView';
 import { ButcherCalculatorView } from './components/ButcherCalculatorView';
 import { LabourersCalculatorView } from './components/LabourersCalculatorView';
@@ -384,6 +386,8 @@ export default function App() {
               presetData={loggerPreset}
               onClearPreset={() => setLoggerPreset(null)}
               onOpenAdpModal={handleOpenAdpModal}
+              activeCharacterId={characterProfiles.activeCharacter?.id}
+              activeCharacterName={characterProfiles.activeCharacter?.name}
               onNavigateToCooking={(recipeId) => {
                 setTargetCraftRecipeId(recipeId);
                 setActiveTab('value_added');
@@ -774,6 +778,20 @@ export default function App() {
             onNavigateToTransport={() => setActiveTab('transport')}
             onOpenAdpModal={handleOpenAdpModal}
           />
+        )}
+
+        {/* Pestaña: Metas Financieras & Presupuesto de Siembra Masiva */}
+        {activeTab === 'goals' && (
+          <FinancialGoalsView
+            logs={logs}
+            hasPremium={settings.defaultTaxRate <= 4}
+            onNavigateToLogger={() => setActiveTab('logger')}
+          />
+        )}
+
+        {/* Pestaña: Sets, Re-Gear & Presupuesto de Bajas */}
+        {activeTab === 'regear' && (
+          <LoadoutsRegearView />
         )}
       </main>
 

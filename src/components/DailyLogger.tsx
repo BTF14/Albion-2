@@ -78,6 +78,8 @@ interface DailyLoggerProps {
   onOpenAdpModal?: (itemId: string, targetType?: 'product' | 'seed_or_baby') => void;
   onNavigateToCooking?: (recipeId: string, harvestAmount: number) => void;
   onNavigateToButcher?: (animalId: string, animalCount: number) => void;
+  activeCharacterId?: string;
+  activeCharacterName?: string;
 }
 
 export const DailyLogger: React.FC<DailyLoggerProps> = ({
@@ -92,6 +94,8 @@ export const DailyLogger: React.FC<DailyLoggerProps> = ({
   onOpenAdpModal,
   onNavigateToCooking,
   onNavigateToButcher,
+  activeCharacterId,
+  activeCharacterName,
 }) => {
   // Fecha del registro
   const [logDateStr, setLogDateStr] = useState<string>(() => {
@@ -536,6 +540,8 @@ export const DailyLogger: React.FC<DailyLoggerProps> = ({
       itemId: currentItem.id,
       itemName: currentItem.nameEs,
       tier: currentItem.tier,
+      characterId: activeCharacterId,
+      characterName: activeCharacterName,
       plotsCount,
       slotsCount,
       returnedSeedsOrBabies: returnedSeeds,

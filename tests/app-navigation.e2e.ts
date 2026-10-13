@@ -28,3 +28,13 @@ test('E2E UI: Navegación a Optimizador de Foco y Cosas por Hacer', async ({ app
   await screen.getByRole('button', { name: /Cosas por Hacer/i }).click();
   await expect(screen.getByRole('heading', { name: /Lista de Cosas por Hacer/i })).toBeVisible();
 });
+
+test('E2E UI: Navegación a Sets & Re-Gear y verificación de presupuesto de bajas', async ({ app, screen }) => {
+  await app.open('/');
+  const regearBtn = screen.getByRole('button', { name: /Sets & Re-Gear/i });
+  await expect(regearBtn).toBeVisible();
+  await regearBtn.click();
+  await expect(screen.getByRole('heading', { name: /Calculadora de Sets, Re-Gear & Presupuesto de Bajas/i })).toBeVisible();
+  await expect(screen.getByText(/Coste por Muerte/i)).toBeVisible();
+});
+

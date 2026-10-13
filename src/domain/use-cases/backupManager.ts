@@ -231,6 +231,7 @@ export function mergeBackupPayload(
       warehouseStoredItems: safeImported.warehouseStoredItems ? [...safeImported.warehouseStoredItems] : safeCurrent.warehouseStoredItems,
       warehouseMountId: safeImported.warehouseMountId || safeCurrent.warehouseMountId,
       blackMarketConfig: safeImported.blackMarketConfig || safeCurrent.blackMarketConfig,
+      financialGoals: safeImported.financialGoals ? [...safeImported.financialGoals] : safeCurrent.financialGoals,
     };
   }
 
@@ -318,5 +319,6 @@ export function mergeBackupPayload(
     warehouseStoredItems: importedData.warehouseStoredItems || currentData.warehouseStoredItems,
     warehouseMountId: importedData.warehouseMountId || currentData.warehouseMountId,
     blackMarketConfig: importedData.blackMarketConfig || currentData.blackMarketConfig,
+    financialGoals: importedData.financialGoals || currentData.financialGoals,
   };
 }

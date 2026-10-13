@@ -1,7 +1,7 @@
 {
   "schemaVersion": "report-1",
   "run": {
-    "id": "01a129d5-f61a-7ccb-b796-a3e7ff0be06f",
+    "id": "01a13437-acd0-7186-99c0-f288c3cb459b",
     "specVersion": "0.1",
     "runner": {
       "name": "e2e",
@@ -9,8 +9,8 @@
     },
     "status": "passed",
     "exitCode": 0,
-    "startedAt": "2026-10-11T07:20:51.406Z",
-    "finishedAt": "2026-10-11T07:21:33.317Z",
+    "startedAt": "2026-10-13T07:43:47.286Z",
+    "finishedAt": "2026-10-13T07:44:40.160Z",
     "project": {
       "id": "albion-farm-economy-tracker",
       "configDigest": "75df380821604b84d8c43f4c5b7073be05cf426232b77d97e90b8280d1b7546d"
@@ -77,14 +77,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d5-ff48-7f27-9d08-480f36558715",
+            "id": "01a13437-b5c8-7f17-82e2-64e619b956a5",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:20:52.808Z",
-            "durationMs": 3090,
+            "startedAt": "2026-10-13T07:43:48.680Z",
+            "durationMs": 2924,
             "artifacts": [
               {
-                "id": "01a129d5-ff48-7f27-9d08-480f36558715:artifact:0",
+                "id": "01a13437-b5c8-7f17-82e2-64e619b956a5:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -92,22 +92,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Abre_20la_20aplicaci_C3_B3n_20y_20renderiza_20el_20t_C3_ADtulo_20ofi-7d81f698/default/attempt-0/trace/trace.zip",
-                "size": 109678,
-                "sha256": "e1536cc2d802d4a0803ace9171b10aef6c966eea25c743ae663a84f0239ae089"
+                "size": 111680,
+                "sha256": "9af9e96348955b9b9366c4c22b23d54f41118d368147dd98685cb595513386de"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d5-ff48-7f27-9d08-480f36558715:0",
+                "id": "01a13437-b5c8-7f17-82e2-64e619b956a5:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:20:53.014Z",
-                "durationMs": 2609,
+                "startedAt": "2026-10-13T07:43:48.868Z",
+                "durationMs": 2454,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -117,14 +117,14 @@
                 }
               },
               {
-                "id": "01a129d5-ff48-7f27-9d08-480f36558715:1",
+                "id": "01a13437-b5c8-7f17-82e2-64e619b956a5:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(\"Albion Farm & Livestock\")",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:20:55.626Z",
-                "durationMs": 173,
+                "startedAt": "2026-10-13T07:43:51.326Z",
+                "durationMs": 178,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -160,14 +160,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-0b5c-70f7-b40c-42fc57ac0ae6",
+            "id": "01a13437-c136-794d-9747-4c6be565da9e",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:20:55.900Z",
-            "durationMs": 2899,
+            "startedAt": "2026-10-13T07:43:51.606Z",
+            "durationMs": 3001,
             "artifacts": [
               {
-                "id": "01a129d6-0b5c-70f7-b40c-42fc57ac0ae6:artifact:0",
+                "id": "01a13437-c136-794d-9747-4c6be565da9e:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -175,22 +175,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Barra_20de_20navegaci_C3_B3n_20superior_20muestra_20las_20pesta_C3_B-7b211a21/default/attempt-0/trace/trace.zip",
-                "size": 180457,
-                "sha256": "a65081a81007eb9a69375446902f53513a0154e29c60ce0fee2115ba8c274183"
+                "size": 254127,
+                "sha256": "c347f53d624b7797ed878e744161d8178812a0fa32ed5d0824cd22d9ea62dbf3"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d6-0b5c-70f7-b40c-42fc57ac0ae6:0",
+                "id": "01a13437-c136-794d-9747-4c6be565da9e:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:20:55.915Z",
-                "durationMs": 2483,
+                "startedAt": "2026-10-13T07:43:51.621Z",
+                "durationMs": 2565,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -200,14 +200,14 @@
                 }
               },
               {
-                "id": "01a129d6-0b5c-70f7-b40c-42fc57ac0ae6:1",
+                "id": "01a13437-c136-794d-9747-4c6be565da9e:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Registrar Cosecha/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:20:58.399Z",
-                "durationMs": 201,
+                "startedAt": "2026-10-13T07:43:54.187Z",
+                "durationMs": 186,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -217,14 +217,14 @@
                 }
               },
               {
-                "id": "01a129d6-0b5c-70f7-b40c-42fc57ac0ae6:2",
+                "id": "01a13437-c136-794d-9747-4c6be565da9e:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Cocina & Alquimia/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:20:58.601Z",
-                "durationMs": 40,
+                "startedAt": "2026-10-13T07:43:54.374Z",
+                "durationMs": 58,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -234,14 +234,14 @@
                 }
               },
               {
-                "id": "01a129d6-0b5c-70f7-b40c-42fc57ac0ae6:3",
+                "id": "01a13437-c136-794d-9747-4c6be565da9e:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Optimizador de Foco/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:20:58.641Z",
-                "durationMs": 26,
+                "startedAt": "2026-10-13T07:43:54.433Z",
+                "durationMs": 31,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -251,14 +251,14 @@
                 }
               },
               {
-                "id": "01a129d6-0b5c-70f7-b40c-42fc57ac0ae6:4",
+                "id": "01a13437-c136-794d-9747-4c6be565da9e:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:20:58.668Z",
-                "durationMs": 46,
+                "startedAt": "2026-10-13T07:43:54.465Z",
+                "durationMs": 51,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -294,14 +294,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-16b1-7bb2-ad99-1f51f64a6bbb",
+            "id": "01a13437-ccf1-7306-9980-6dde47bad531",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:20:58.801Z",
-            "durationMs": 3836,
+            "startedAt": "2026-10-13T07:43:54.609Z",
+            "durationMs": 3634,
             "artifacts": [
               {
-                "id": "01a129d6-16b1-7bb2-ad99-1f51f64a6bbb:artifact:0",
+                "id": "01a13437-ccf1-7306-9980-6dde47bad531:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -309,22 +309,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Cambio_20a_20la_20pesta_C3_B1a_20de_20Cocina_20_26_20Alquimia_20y_20-f1fc236a/default/attempt-0/trace/trace.zip",
-                "size": 1035537,
-                "sha256": "4546a2cd9427ee16d9bcb2c9aeee5193f11fa8dbbdf0ff23cc603d0d8692f293"
+                "size": 904340,
+                "sha256": "04ee4132dfa407ceeffc51e0001fe681f8413d60192879aaf281d45de8d2f9fe"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d6-16b1-7bb2-ad99-1f51f64a6bbb:0",
+                "id": "01a13437-ccf1-7306-9980-6dde47bad531:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:20:58.818Z",
-                "durationMs": 2367,
+                "startedAt": "2026-10-13T07:43:54.632Z",
+                "durationMs": 2403,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -334,14 +334,14 @@
                 }
               },
               {
-                "id": "01a129d6-16b1-7bb2-ad99-1f51f64a6bbb:1",
+                "id": "01a13437-ccf1-7306-9980-6dde47bad531:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Cocina & Alquimia/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:01.186Z",
-                "durationMs": 1019,
+                "startedAt": "2026-10-13T07:43:57.036Z",
+                "durationMs": 931,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -351,14 +351,14 @@
                 }
               },
               {
-                "id": "01a129d6-16b1-7bb2-ad99-1f51f64a6bbb:2",
+                "id": "01a13437-ccf1-7306-9980-6dde47bad531:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Valor Agregado: Cocina & Alquimia/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:02.206Z",
-                "durationMs": 199,
+                "startedAt": "2026-10-13T07:43:57.968Z",
+                "durationMs": 67,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -394,14 +394,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-25b4-7263-9c72-1d2cdd1e1e86",
+            "id": "01a13437-db25-7b97-89e8-3367fa70c9b1",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:02.644Z",
-            "durationMs": 3787,
+            "startedAt": "2026-10-13T07:43:58.245Z",
+            "durationMs": 3793,
             "artifacts": [
               {
-                "id": "01a129d6-25b4-7263-9c72-1d2cdd1e1e86:artifact:0",
+                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -409,22 +409,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Navegaci_C3_B3n_20a_20Optimizador_20de_20Foco_20y_20Cosas_20por_20Ha-a314a38b/default/attempt-0/trace/trace.zip",
-                "size": 986078,
-                "sha256": "55de97cdc5ac4e793b836dd7ae7446b5eb93a33a8e119699e83a6d5b3ec8f64e"
+                "size": 1150433,
+                "sha256": "9c40b13bb18346764d9baa4fe01cf561f28fb4c6a5b738071cd5b6fc98f71508"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d6-25b4-7263-9c72-1d2cdd1e1e86:0",
+                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:02.663Z",
-                "durationMs": 2491,
+                "startedAt": "2026-10-13T07:43:58.266Z",
+                "durationMs": 2441,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -434,14 +434,14 @@
                 }
               },
               {
-                "id": "01a129d6-25b4-7263-9c72-1d2cdd1e1e86:1",
+                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Optimizador de Foco/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:05.155Z",
-                "durationMs": 538,
+                "startedAt": "2026-10-13T07:44:00.708Z",
+                "durationMs": 508,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -451,14 +451,14 @@
                 }
               },
               {
-                "id": "01a129d6-25b4-7263-9c72-1d2cdd1e1e86:2",
+                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Optimizador de Foco Diario/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:05.693Z",
-                "durationMs": 20,
+                "startedAt": "2026-10-13T07:44:01.217Z",
+                "durationMs": 23,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -468,14 +468,14 @@
                 }
               },
               {
-                "id": "01a129d6-25b4-7263-9c72-1d2cdd1e1e86:3",
+                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:3",
                 "index": 3,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:05.715Z",
-                "durationMs": 428,
+                "startedAt": "2026-10-13T07:44:01.241Z",
+                "durationMs": 449,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -485,20 +485,154 @@
                 }
               },
               {
-                "id": "01a129d6-25b4-7263-9c72-1d2cdd1e1e86:4",
+                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Lista de Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:06.143Z",
-                "durationMs": 63,
+                "startedAt": "2026-10-13T07:44:01.690Z",
+                "durationMs": 135,
                 "events": [],
                 "artifacts": [],
                 "source": {
                   "file": "tests/app-navigation.e2e.ts",
                   "line": 29,
                   "column": 84
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1d2b873f4490399c47597c0eb4d77951792a736326a0de51c4da15b36e1e2e74",
+        "testId": "tests/app-navigation.e2e.ts::E2E%20UI%3A%20Navegaci%C3%B3n%20a%20Sets%20%26%20Re-Gear%20y%20verificaci%C3%B3n%20de%20presupuesto%20de%20bajas",
+        "kind": "test",
+        "declarationIndex": 4,
+        "titlePath": [
+          "E2E UI: Navegación a Sets & Re-Gear y verificación de presupuesto de bajas"
+        ],
+        "file": "tests/app-navigation.e2e.ts",
+        "source": {
+          "file": "tests/app-navigation.e2e.ts",
+          "line": 32,
+          "column": 1
+        },
+        "targetId": "web-local",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-10-13T07:44:02.039Z",
+            "durationMs": 3366,
+            "artifacts": [
+              {
+                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:artifact:0",
+                "kind": "trace",
+                "mediaType": "application/zip",
+                "redaction": "not-required",
+                "producer": {
+                  "kind": "attempt"
+                },
+                "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Navegaci_C3_B3n_20a_20Sets_20_26_20Re-Gear_20y_20verificaci_C3_B3n_2-045dc1fc/default/attempt-0/trace/trace.zip",
+                "size": 685753,
+                "sha256": "ba62cee032cd63a3d54962cd1ef2b4c6f2775db88718a9c58d72be5bc80ec90b"
+              }
+            ],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": [
+              {
+                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:02.065Z",
+                "durationMs": 2483,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/app-navigation.e2e.ts",
+                  "line": 33,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:1",
+                "index": 1,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: /Sets & Re-Gear/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:04.548Z",
+                "durationMs": 212,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/app-navigation.e2e.ts",
+                  "line": 35,
+                  "column": 27
+                }
+              },
+              {
+                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.click",
+                "label": "getByRole(\"button\", name: /Sets & Re-Gear/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:04.760Z",
+                "durationMs": 435,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/app-navigation.e2e.ts",
+                  "line": 36,
+                  "column": 19
+                }
+              },
+              {
+                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"heading\", name: /Calculadora de Sets, Re-Gear & Presupuesto de Bajas/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:05.195Z",
+                "durationMs": 32,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/app-navigation.e2e.ts",
+                  "line": 37,
+                  "column": 111
+                }
+              },
+              {
+                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:4",
+                "index": 4,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(/Coste por Muerte/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:05.228Z",
+                "durationMs": 26,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/app-navigation.e2e.ts",
+                  "line": 38,
+                  "column": 55
                 }
               }
             ]
@@ -528,14 +662,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-34df-7f40-b0ba-50e6c042bde5",
+            "id": "01a13437-f75a-7521-808d-9684a85f002b",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.527Z",
-            "durationMs": 38,
+            "startedAt": "2026-10-13T07:44:05.466Z",
+            "durationMs": 37,
             "artifacts": [
               {
-                "id": "01a129d6-34df-7f40-b0ba-50e6c042bde5:artifact:0",
+                "id": "01a13437-f75a-7521-808d-9684a85f002b:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -544,7 +678,7 @@
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateCraftingEconomy_20respeta_20RRR_20oficial_20en_20Cae-37589e78/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "f3edbb6da66a0b491e65eb9734c0f33cc80c35552b8c7aae3d166be2ce406c02"
+                "sha256": "a31b843f69ccc52ac88e33a185d117f8a3b678ec03eaf42eb70728e2d21000a1"
               }
             ],
             "secondaryErrors": [],
@@ -576,14 +710,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3506-789b-8c17-fb95a72b9042",
+            "id": "01a13437-f77f-746b-9078-fcd37e0a919a",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.566Z",
-            "durationMs": 33,
+            "startedAt": "2026-10-13T07:44:05.503Z",
+            "durationMs": 43,
             "artifacts": [
               {
-                "id": "01a129d6-3506-789b-8c17-fb95a72b9042:artifact:0",
+                "id": "01a13437-f77f-746b-9078-fcd37e0a919a:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -592,7 +726,7 @@
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateHarvestEconomy_20calcula_20de_20forma_20defensiva_20-d63fa055/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "13bcc2cd946f7535bf66b946f97f0a0ed66383d36f72115a32d0fe6b7b897a10"
+                "sha256": "daaa24efee232745989219b9e776c1cf6014479bf79e70df7c29368f2b96753d"
               }
             ],
             "secondaryErrors": [],
@@ -624,14 +758,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3528-764b-a5de-e96fd9b10f9d",
+            "id": "01a13437-f7aa-733d-8e1b-4c6ac0815d69",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.600Z",
-            "durationMs": 46,
+            "startedAt": "2026-10-13T07:44:05.546Z",
+            "durationMs": 38,
             "artifacts": [
               {
-                "id": "01a129d6-3528-764b-a5de-e96fd9b10f9d:artifact:0",
+                "id": "01a13437-f7aa-733d-8e1b-4c6ac0815d69:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -639,8 +773,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateButcherEconomy_20calcula_20rendimiento_20base_2020_2-a771d7ed/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "74478593665fa40359b1175023076eefb965be5fe50fe20b843e6bce5e980bb9"
+                "size": 55557,
+                "sha256": "8ea0a5ef21ffe9d8a6c80915fffcfa2ac5be6353e6be4a8bc8dbf4e85671e1b9"
               }
             ],
             "secondaryErrors": [],
@@ -672,14 +806,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3557-737c-86b1-909889d407c6",
+            "id": "01a13437-f7d0-703d-899b-febb6ed3be25",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.647Z",
-            "durationMs": 43,
+            "startedAt": "2026-10-13T07:44:05.585Z",
+            "durationMs": 33,
             "artifacts": [
               {
-                "id": "01a129d6-3557-737c-86b1-909889d407c6:artifact:0",
+                "id": "01a13437-f7d0-703d-899b-febb6ed3be25:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -688,7 +822,7 @@
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateRefiningEconomy_20calcula_20RRR_20de_2036.7_25_20sin-c28513c1/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "d2e56eb83fd77ae426c2ac6c31a3084eb062ec600fbe49fcc5d5d47e53473e78"
+                "sha256": "f72c0f1d5c58aef344f1177c0c46e2600519ef97a62b7d5cb2089a0138af4217"
               }
             ],
             "secondaryErrors": [],
@@ -720,14 +854,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3583-7898-a86f-5da726e54f02",
+            "id": "01a13437-f7f3-70c0-88ce-365396414f80",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.691Z",
-            "durationMs": 47,
+            "startedAt": "2026-10-13T07:44:05.619Z",
+            "durationMs": 31,
             "artifacts": [
               {
-                "id": "01a129d6-3583-7898-a86f-5da726e54f02:artifact:0",
+                "id": "01a13437-f7f3-70c0-88ce-365396414f80:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -736,7 +870,7 @@
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateMountEconomy_20respeta_2010_20u._20alimento_2Fciclo_-b7f4c977/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "c181281ff62dd8be7d500a3ac8c45ff054a68ab4276215a4f9cca76716065743"
+                "sha256": "f33888db75cdb19578ab1eccc9a1207c53339e911c8d69d6aaf0adc3672040ea"
               }
             ],
             "secondaryErrors": [],
@@ -768,14 +902,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-35b3-7901-b5b9-5a333115f4b0",
+            "id": "01a13437-f813-71fe-af1c-15223968cff3",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.739Z",
-            "durationMs": 35,
+            "startedAt": "2026-10-13T07:44:05.651Z",
+            "durationMs": 36,
             "artifacts": [
               {
-                "id": "01a129d6-35b3-7901-b5b9-5a333115f4b0:artifact:0",
+                "id": "01a13437-f813-71fe-af1c-15223968cff3:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -783,8 +917,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateEquipmentCraftingEconomy_20valida_2024_20mats_20para-02546eb6/default/attempt-0/trace/trace.zip",
-                "size": 55555,
-                "sha256": "52cdd596126316ef96bacad173d6dea6ca3f77cabba873862bb501c81882620a"
+                "size": 55557,
+                "sha256": "c409882cc6372ddef997cfc95a072caf7c9a298bf46260fd7c379066247e01e0"
               }
             ],
             "secondaryErrors": [],
@@ -816,14 +950,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-35d7-71a3-bf83-d3ba907fd245",
+            "id": "01a13437-f837-7dd6-aba8-8d10327278d9",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.775Z",
-            "durationMs": 37,
+            "startedAt": "2026-10-13T07:44:05.687Z",
+            "durationMs": 28,
             "artifacts": [
               {
-                "id": "01a129d6-35d7-71a3-bf83-d3ba907fd245:artifact:0",
+                "id": "01a13437-f837-7dd6-aba8-8d10327278d9:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -832,7 +966,7 @@
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateResourceTransmutation_20aplica_20costes_20oficiales_-4004061d/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "64af14a088d03dee455716ca196033920051781555987199917668dac82b712c"
+                "sha256": "8779d0a9e233c98ca0994d1fd2c2e6b58dcc8114be23024bfd5e44e8843b5089"
               }
             ],
             "secondaryErrors": [],
@@ -864,14 +998,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-35fd-7e23-961d-8e7a52ff7b34",
+            "id": "01a13437-f853-7414-a893-a9d378db1913",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.813Z",
-            "durationMs": 39,
+            "startedAt": "2026-10-13T07:44:05.715Z",
+            "durationMs": 29,
             "artifacts": [
               {
-                "id": "01a129d6-35fd-7e23-961d-8e7a52ff7b34:artifact:0",
+                "id": "01a13437-f853-7414-a893-a9d378db1913:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -880,7 +1014,7 @@
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateGuildIslandEconomy_20calcula_20solares_20y_20amortiz-b69e0482/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "b1857a7d67c1c34bdddca1db625b21e4b311fd85afc8698a73f859d40dd8e959"
+                "sha256": "0ed7258f874286628c2589c406c9bfa1ddddc31f50bb914272205aa866128763"
               }
             ],
             "secondaryErrors": [],
@@ -912,14 +1046,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3625-7385-b211-e555aabe8760",
+            "id": "01a13437-f870-7d89-8241-54cb461f5a09",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.853Z",
-            "durationMs": 37,
+            "startedAt": "2026-10-13T07:44:05.745Z",
+            "durationMs": 41,
             "artifacts": [
               {
-                "id": "01a129d6-3625-7385-b211-e555aabe8760:artifact:0",
+                "id": "01a13437-f870-7d89-8241-54cb461f5a09:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -927,8 +1061,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateBlackMarketThreshold_20calcula_20con_20precisi_C3_B3-31aa4630/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "a4eaa15b230298bc2cbbca0bfec0d140c85431167b68f7b730c10741ab8f1bda"
+                "size": 55557,
+                "sha256": "ddb0afd810350746f1f60f81e76af51846100c5afa56141f5866f1dd12e239a5"
               }
             ],
             "secondaryErrors": [],
@@ -960,14 +1094,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-364b-754c-9ab8-26386a5f7813",
+            "id": "01a13437-f89a-769e-a557-fb48bb36172c",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.891Z",
+            "startedAt": "2026-10-13T07:44:05.786Z",
             "durationMs": 36,
             "artifacts": [
               {
-                "id": "01a129d6-364b-754c-9ab8-26386a5f7813:artifact:0",
+                "id": "01a13437-f89a-769e-a557-fb48bb36172c:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -975,8 +1109,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateRedZoneTransport_20calcula_20supervivencia_20y_20Val-057031da/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "1bb4948bc4777f6cd9c6b02070fae645d5154e83bd028ab933f548648e142045"
+                "size": 55557,
+                "sha256": "ac19c45a88260fefe101773186ee6d98400c33d2b32cca50134e8f79f178f768"
               }
             ],
             "secondaryErrors": [],
@@ -1008,14 +1142,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-366f-7511-b5d3-adf2bb883efd",
+            "id": "01a13437-f8be-7d5a-9b20-03a8da0640bb",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.927Z",
-            "durationMs": 34,
+            "startedAt": "2026-10-13T07:44:05.822Z",
+            "durationMs": 32,
             "artifacts": [
               {
-                "id": "01a129d6-366f-7511-b5d3-adf2bb883efd:artifact:0",
+                "id": "01a13437-f8be-7d5a-9b20-03a8da0640bb:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1024,7 +1158,7 @@
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateFishingSaucesEconomy_20calcula_20rendimiento_20de_20-a7c6fad9/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "11f75c26ff4f43575a024582049a507115be8222f0d83b3a588cbe723de25e79"
+                "sha256": "203a2c9a4a4732a32a3aedb86c3bd651c6383eb9ab9064fc7649ac8b46e688e7"
               }
             ],
             "secondaryErrors": [],
@@ -1056,14 +1190,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-36a3-78ad-9fb7-01f9338c432f",
+            "id": "01a13437-f8ed-7817-bf9a-523dd16533fc",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:06.979Z",
-            "durationMs": 64,
+            "startedAt": "2026-10-13T07:44:05.869Z",
+            "durationMs": 34,
             "artifacts": [
               {
-                "id": "01a129d6-36a3-78ad-9fb7-01f9338c432f:artifact:0",
+                "id": "01a13437-f8ed-7817-bf9a-523dd16533fc:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1072,7 +1206,7 @@
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Todos_20los_20ingredientes_20referenciados_20existen_20en_20ALBION-338b66e2/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "8e14cc8762caf75d484c3daba0a3dcbb248c40393dec3c0cd1e376a9d062235c"
+                "sha256": "df9aa0f3a954157cb22adc3f74b97cf16895c515423b2887fb9d7443fd8b0faf"
               }
             ],
             "secondaryErrors": [],
@@ -1104,14 +1238,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-36e4-70a4-88b1-17f5b5ad8089",
+            "id": "01a13437-f90f-7637-b9b4-6ea859064d90",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.044Z",
-            "durationMs": 37,
+            "startedAt": "2026-10-13T07:44:05.903Z",
+            "durationMs": 35,
             "artifacts": [
               {
-                "id": "01a129d6-36e4-70a4-88b1-17f5b5ad8089:artifact:0",
+                "id": "01a13437-f90f-7637-b9b4-6ea859064d90:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1120,7 +1254,7 @@
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Galletas_20de_20Huevo_20de_20Drag_C3_B3n_20T8_20cumplen_20la_20mec-7a509b2c/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "8cf06a3c1d1e5b5720ec48e05cfa19029fb2d39344803c9f3e9fa304e3107450"
+                "sha256": "822469000265187fa68a9f6cbc1c0ad70ee92cf52e98288a3aa2a7b11b727719"
               }
             ],
             "secondaryErrors": [],
@@ -1152,14 +1286,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3709-7b39-9ad9-c7a99dd27583",
+            "id": "01a13437-f933-7150-9361-ca38614a7b0d",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.081Z",
-            "durationMs": 29,
+            "startedAt": "2026-10-13T07:44:05.939Z",
+            "durationMs": 33,
             "artifacts": [
               {
-                "id": "01a129d6-3709-7b39-9ad9-c7a99dd27583:artifact:0",
+                "id": "01a13437-f933-7150-9361-ca38614a7b0d:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1167,8 +1301,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Poci_C3_B3n_20de_20Guardia_20de_20Vida_20_2F_20Drag_C3_B3n_20T6_20-fc55573e/default/attempt-0/trace/trace.zip",
-                "size": 55553,
-                "sha256": "80262d1d0843bde6dd6a26b6a11be06726724af4c27c6caf5d442420ccf42567"
+                "size": 55556,
+                "sha256": "83cc2329d0d10597aef56d9e13898aaf3cb86d54f6e2542062e2e2061df42c5c"
               }
             ],
             "secondaryErrors": [],
@@ -1200,14 +1334,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3727-7101-ba39-ec196fa0baf1",
+            "id": "01a13437-f954-7aba-a6be-41a06bc577cf",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.111Z",
-            "durationMs": 30,
+            "startedAt": "2026-10-13T07:44:05.973Z",
+            "durationMs": 34,
             "artifacts": [
               {
-                "id": "01a129d6-3727-7101-ba39-ec196fa0baf1:artifact:0",
+                "id": "01a13437-f954-7aba-a6be-41a06bc577cf:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1215,8 +1349,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Tortilla_20de_20Pez_20Ley_20T7_20utiliza_201_20pez_20aleta_20ley_2-83a3d932/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "4235562ddf263202d08e51cf51df44312dc569f45243d4839ecb6c9adccbdca5"
+                "size": 55557,
+                "sha256": "c95c4124c5adb953fa8faadfc05c7da7bbbbf7124afc4063e2b6cd6909e595f6"
               }
             ],
             "secondaryErrors": [],
@@ -1248,14 +1382,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3746-730b-93d5-688cfccf6018",
+            "id": "01a13437-f978-725b-96d5-b690551907e4",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.142Z",
-            "durationMs": 29,
+            "startedAt": "2026-10-13T07:44:06.008Z",
+            "durationMs": 49,
             "artifacts": [
               {
-                "id": "01a129d6-3746-730b-93d5-688cfccf6018:artifact:0",
+                "id": "01a13437-f978-725b-96d5-b690551907e4:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1264,7 +1398,7 @@
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Platos_20Avalonianos_20T7_20y_20T8_20tienen_20f_C3_B3rmulas_20e_20-5cca388e/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "2fb8ebe7078d819a877dddbe89c38e6657f85462e5500e16cd0dabe9c254500d"
+                "sha256": "3aa512b33fd5d77985153f7f5f5e2fd36531c19962ba86db0217fb7a2d9fcf45"
               }
             ],
             "secondaryErrors": [],
@@ -1296,14 +1430,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3763-7f11-ad9e-9ad9b3cec479",
+            "id": "01a13437-f9a9-72ad-9ed3-4ce4a24e5f1e",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.171Z",
-            "durationMs": 30,
+            "startedAt": "2026-10-13T07:44:06.057Z",
+            "durationMs": 29,
             "artifacts": [
               {
-                "id": "01a129d6-3763-7f11-ad9e-9ad9b3cec479:artifact:0",
+                "id": "01a13437-f9a9-72ad-9ed3-4ce4a24e5f1e:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1312,7 +1446,7 @@
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Destilados_20de_20cultivos_20tienen_20relaci_C3_B3n_20estricta_201-e382974c/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "ba85776d4ff9e28f821c473b5e4419ac00c541475a94ac4261b3c8eb55a8d494"
+                "sha256": "19c0b8558d6909a70b3e6b2b70c591107882d4f03abc0e065cddabeeb73ec94b"
               }
             ],
             "secondaryErrors": [],
@@ -1344,14 +1478,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3781-7fe8-83f4-72879d2c9c23",
+            "id": "01a13437-f9c6-7b02-a58d-3374359b1e78",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.201Z",
-            "durationMs": 28,
+            "startedAt": "2026-10-13T07:44:06.086Z",
+            "durationMs": 33,
             "artifacts": [
               {
-                "id": "01a129d6-3781-7fe8-83f4-72879d2c9c23:artifact:0",
+                "id": "01a13437-f9c6-7b02-a58d-3374359b1e78:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1360,7 +1494,7 @@
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Pasteles_20_28Pies_29_20tienen_20sus_204_20ingredientes_20oficiale-dae28d01/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "b7be3672d244002ce0f6afa0fefdcbb17d9f4f3dd61cd4bcfaa442bf88d77b80"
+                "sha256": "56973e9348bde0a20c919eea30a4775bd614eca0fb0cb67ddf9798ea75ff16d8"
               }
             ],
             "secondaryErrors": [],
@@ -1392,14 +1526,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-379d-7f95-a604-5576448bad55",
+            "id": "01a13437-f9e8-7071-8c01-9362b873b0ca",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.229Z",
-            "durationMs": 32,
+            "startedAt": "2026-10-13T07:44:06.120Z",
+            "durationMs": 29,
             "artifacts": [
               {
-                "id": "01a129d6-379d-7f95-a604-5576448bad55:artifact:0",
+                "id": "01a13437-f9e8-7071-8c01-9362b873b0ca:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1408,7 +1542,7 @@
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Guisos_20_28Stews_29_20usan_20Pan_20_28Trigo_29_20can_C3_B3nico_20-ae5934ab/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "8a608263cae5083893a1116931f2a0f9d090a3d8f126e6904db6df8dba79f23b"
+                "sha256": "3d166646d20134d98e2b9d7e3022fe4b0b94416ef4360a70e1a4c01b4570cee7"
               }
             ],
             "secondaryErrors": [],
@@ -1440,14 +1574,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-37bd-70e3-9312-53a09fecafa0",
+            "id": "01a13437-fa05-7973-b6d8-49bff8e022fb",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.261Z",
-            "durationMs": 31,
+            "startedAt": "2026-10-13T07:44:06.149Z",
+            "durationMs": 32,
             "artifacts": [
               {
-                "id": "01a129d6-37bd-70e3-9312-53a09fecafa0:artifact:0",
+                "id": "01a13437-fa05-7973-b6d8-49bff8e022fb:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1456,7 +1590,7 @@
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20_C3_81rbol_20completo_20de_2022_20Pociones_20de_20Alquimia_20inclu-61707a4c/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "3003d0e858d27e4bd4f98753243137aa65619b7d67a418922caa8d3595d9799e"
+                "sha256": "1936858f57407a96ac5cb79d4a6f21c5b77a63d63121e2b3dfd5e172945abc41"
               }
             ],
             "secondaryErrors": [],
@@ -1488,14 +1622,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-37f0-73b3-a4cc-5ad169c3e3bd",
+            "id": "01a13437-fa36-7a4d-8e99-eec7993bc772",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.312Z",
-            "durationMs": 28,
+            "startedAt": "2026-10-13T07:44:06.198Z",
+            "durationMs": 31,
             "artifacts": [
               {
-                "id": "01a129d6-37f0-73b3-a4cc-5ad169c3e3bd:artifact:0",
+                "id": "01a13437-fa36-7a4d-8e99-eec7993bc772:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1503,8 +1637,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20local-first_20storage_20guarda_20y_20recupera_20registros_2-40f0e409/default/attempt-0/trace/trace.zip",
-                "size": 55555,
-                "sha256": "b45c177df4e20f974adf99767a1d12d12507289a99484dcd880fa778e62c12a7"
+                "size": 55556,
+                "sha256": "d710857b866df6147c7b296785bb1baa3f17c3f6c4c6e3436b9c1286bbcc4259"
               }
             ],
             "secondaryErrors": [],
@@ -1536,14 +1670,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-380c-7f1e-bbfe-3416613da47f",
+            "id": "01a13437-fa56-7676-aefa-8e3acc3508f8",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.340Z",
-            "durationMs": 32,
+            "startedAt": "2026-10-13T07:44:06.230Z",
+            "durationMs": 41,
             "artifacts": [
               {
-                "id": "01a129d6-380c-7f1e-bbfe-3416613da47f:artifact:0",
+                "id": "01a13437-fa56-7676-aefa-8e3acc3508f8:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1552,7 +1686,7 @@
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20updatePriceMemory_20persiste_20cotizaciones_20y_20respeta_2-311123a0/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "dd0ae393fccd3ed95f1e117d288587017a457ced7df58aff9ce7033a519ab7e7"
+                "sha256": "271b3558846e84c5397f1d614bca594d6a251424e85c2d9db42eb0274c48d39c"
               }
             ],
             "secondaryErrors": [],
@@ -1584,14 +1718,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-382c-7c72-b1ce-d850ce0f0149",
+            "id": "01a13437-fa80-7ca0-8583-c137eb09a4a3",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.372Z",
-            "durationMs": 33,
+            "startedAt": "2026-10-13T07:44:06.272Z",
+            "durationMs": 35,
             "artifacts": [
               {
-                "id": "01a129d6-382c-7c72-b1ce-d850ce0f0149:artifact:0",
+                "id": "01a13437-fa80-7ca0-8583-c137eb09a4a3:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1600,7 +1734,7 @@
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20sanitizaci_C3_B3n_20estricta_20previene_20Prototype_20Pollu-567bbbec/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "668938993734dc21a27a80472ab8b988de580e5fdd9a70f2982b5ce4a2de3ab9"
+                "sha256": "9519ef647c2f013b205059a8e191f082cff429bd118f05276877739bd31ead84"
               }
             ],
             "secondaryErrors": [],
@@ -1632,14 +1766,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-384e-77dd-99cf-dafa91e62c92",
+            "id": "01a13437-faa3-7444-a222-1cf29ba22920",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.406Z",
-            "durationMs": 43,
+            "startedAt": "2026-10-13T07:44:06.307Z",
+            "durationMs": 29,
             "artifacts": [
               {
-                "id": "01a129d6-384e-77dd-99cf-dafa91e62c92:artifact:0",
+                "id": "01a13437-faa3-7444-a222-1cf29ba22920:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1648,7 +1782,7 @@
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20lista_20de_20tareas_20_28Checklist_29_20persiste_20y_20mane-b289b9f2/default/attempt-0/trace/trace.zip",
                 "size": 55556,
-                "sha256": "d5ea1bfee6acc1d39d40e6aafc6022a2855add426dcb71e9118c4152a7d09c89"
+                "sha256": "1658e8adb03ab846ad51e91ae624dcaf691586884abe354b7c8296520b9080a3"
               }
             ],
             "secondaryErrors": [],
@@ -1680,14 +1814,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-3879-7ff3-ba6d-f65c8dc02e4e",
+            "id": "01a13437-fac1-7237-a60a-4cc78630ac9e",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.449Z",
-            "durationMs": 33,
+            "startedAt": "2026-10-13T07:44:06.337Z",
+            "durationMs": 31,
             "artifacts": [
               {
-                "id": "01a129d6-3879-7ff3-ba6d-f65c8dc02e4e:artifact:0",
+                "id": "01a13437-fac1-7237-a60a-4cc78630ac9e:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1695,8 +1829,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20perfiles_20de_20personajes_20_28Alts_29_20y_20reloj_20de_20-39afa444/default/attempt-0/trace/trace.zip",
-                "size": 55557,
-                "sha256": "23e93584079258ce739e7859d879afc5e0e4a5d7852f0e9c3dcb6f47fc2d5945"
+                "size": 55556,
+                "sha256": "5f715b14fd74a08b9176738346e749db00f22b409371d94cc05fa7978721c91a"
               }
             ],
             "secondaryErrors": [],
@@ -1728,14 +1862,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-389a-7b24-ad08-d21fe17ef5fc",
+            "id": "01a13437-fae0-7d0a-bb3d-52c69378f823",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.482Z",
-            "durationMs": 38,
+            "startedAt": "2026-10-13T07:44:06.369Z",
+            "durationMs": 37,
             "artifacts": [
               {
-                "id": "01a129d6-389a-7b24-ad08-d21fe17ef5fc:artifact:0",
+                "id": "01a13437-fae0-7d0a-bb3d-52c69378f823:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1743,8 +1877,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20respaldo_20oficial_20v2_20incluye_20y_20restaura_20configur-2364243c/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "4cc9a396f69ae801e360d6989e34c42049c523449555287e1309f2c04fb4e569"
+                "size": 55557,
+                "sha256": "a05c02468c39dc63d765da7add34692aaf513750d3bebafd70866340cde69295"
               }
             ],
             "secondaryErrors": [],
@@ -1776,14 +1910,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa",
+            "id": "01a13437-fb10-7a67-8361-1671b20838c9",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:07.528Z",
-            "durationMs": 4280,
+            "startedAt": "2026-10-13T07:44:06.416Z",
+            "durationMs": 4437,
             "artifacts": [
               {
-                "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa:artifact:0",
+                "id": "01a13437-fb10-7a67-8361-1671b20838c9:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1791,22 +1925,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Apertura_20y_20cierre_20de_20la_20Paleta_20de_20Comandos_20_28-5296faad/default/attempt-0/trace/trace.zip",
-                "size": 877958,
-                "sha256": "f7dd0ded5eeeb00abf1fbad8784c1bf02e8d6f732c78150312647e642b4fa1bb"
+                "size": 844239,
+                "sha256": "0ad34a57d066b045e1326045d9c0bbb48d95d868bb87dedcec92a478a6a5c8f4"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa:0",
+                "id": "01a13437-fb10-7a67-8361-1671b20838c9:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:07.536Z",
-                "durationMs": 2430,
+                "startedAt": "2026-10-13T07:44:06.429Z",
+                "durationMs": 2429,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1816,14 +1950,14 @@
                 }
               },
               {
-                "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa:1",
+                "id": "01a13437-fb10-7a67-8361-1671b20838c9:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Buscar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:09.967Z",
-                "durationMs": 227,
+                "startedAt": "2026-10-13T07:44:08.859Z",
+                "durationMs": 204,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1833,14 +1967,14 @@
                 }
               },
               {
-                "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa:2",
+                "id": "01a13437-fb10-7a67-8361-1671b20838c9:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Buscar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:10.195Z",
-                "durationMs": 526,
+                "startedAt": "2026-10-13T07:44:09.064Z",
+                "durationMs": 428,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1850,14 +1984,14 @@
                 }
               },
               {
-                "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa:3",
+                "id": "01a13437-fb10-7a67-8361-1671b20838c9:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"textbox\", name: /Buscar módulo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:10.723Z",
-                "durationMs": 28,
+                "startedAt": "2026-10-13T07:44:09.492Z",
+                "durationMs": 39,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1867,14 +2001,14 @@
                 }
               },
               {
-                "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa:4",
+                "id": "01a13437-fb10-7a67-8361-1671b20838c9:4",
                 "index": 4,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: /Buscar módulo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:10.752Z",
-                "durationMs": 82,
+                "startedAt": "2026-10-13T07:44:09.533Z",
+                "durationMs": 77,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1884,14 +2018,14 @@
                 }
               },
               {
-                "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa:5",
+                "id": "01a13437-fb10-7a67-8361-1671b20838c9:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Calculadora de Valor Agregado/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:10.835Z",
-                "durationMs": 26,
+                "startedAt": "2026-10-13T07:44:09.610Z",
+                "durationMs": 29,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1901,14 +2035,14 @@
                 }
               },
               {
-                "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa:6",
+                "id": "01a13437-fb10-7a67-8361-1671b20838c9:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Calculadora de Valor Agregado/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:10.861Z",
-                "durationMs": 744,
+                "startedAt": "2026-10-13T07:44:09.639Z",
+                "durationMs": 968,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1918,14 +2052,14 @@
                 }
               },
               {
-                "id": "01a129d6-38c8-7078-b9a5-cb4a31af3eaa:7",
+                "id": "01a13437-fb10-7a67-8361-1671b20838c9:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Valor Agregado: Cocina & Alquimia/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:11.606Z",
-                "durationMs": 41,
+                "startedAt": "2026-10-13T07:44:10.608Z",
+                "durationMs": 31,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1961,14 +2095,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-4981-792d-89aa-3885c37554d0",
+            "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:11.809Z",
-            "durationMs": 4013,
+            "startedAt": "2026-10-13T07:44:10.853Z",
+            "durationMs": 3680,
             "artifacts": [
               {
-                "id": "01a129d6-4981-792d-89aa-3885c37554d0:artifact:0",
+                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1976,22 +2110,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Apertura_20y_20controles_20del_20Modal_20de_20Respaldo_20de_20-87254c1e/default/attempt-0/trace/trace.zip",
-                "size": 816318,
-                "sha256": "a6c8355a0273bd51822c2afe4593b925bb6837dd3200d58dd937c118360c0260"
+                "size": 752583,
+                "sha256": "816394c5cf4b38a2c343117fdcdb686fae28721ffcc237b12157a1d4e9e02d2d"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d6-4981-792d-89aa-3885c37554d0:0",
+                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:11.831Z",
-                "durationMs": 2562,
+                "startedAt": "2026-10-13T07:44:10.865Z",
+                "durationMs": 2499,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2001,14 +2135,14 @@
                 }
               },
               {
-                "id": "01a129d6-4981-792d-89aa-3885c37554d0:1",
+                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Respaldo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:14.394Z",
-                "durationMs": 216,
+                "startedAt": "2026-10-13T07:44:13.365Z",
+                "durationMs": 188,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2018,14 +2152,14 @@
                 }
               },
               {
-                "id": "01a129d6-4981-792d-89aa-3885c37554d0:2",
+                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Respaldo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:14.611Z",
-                "durationMs": 404,
+                "startedAt": "2026-10-13T07:44:13.554Z",
+                "durationMs": 389,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2035,14 +2169,14 @@
                 }
               },
               {
-                "id": "01a129d6-4981-792d-89aa-3885c37554d0:3",
+                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Respaldo Completo de Datos/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:15.015Z",
-                "durationMs": 27,
+                "startedAt": "2026-10-13T07:44:13.944Z",
+                "durationMs": 23,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2052,14 +2186,14 @@
                 }
               },
               {
-                "id": "01a129d6-4981-792d-89aa-3885c37554d0:4",
+                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Descargar Archivo de Respaldo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:15.044Z",
-                "durationMs": 66,
+                "startedAt": "2026-10-13T07:44:13.968Z",
+                "durationMs": 52,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2069,14 +2203,14 @@
                 }
               },
               {
-                "id": "01a129d6-4981-792d-89aa-3885c37554d0:5",
+                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Restaurar Copia de Seguridad/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:15.110Z",
-                "durationMs": 19,
+                "startedAt": "2026-10-13T07:44:14.021Z",
+                "durationMs": 20,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2086,14 +2220,14 @@
                 }
               },
               {
-                "id": "01a129d6-4981-792d-89aa-3885c37554d0:6",
+                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Cerrar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:15.130Z",
-                "durationMs": 439,
+                "startedAt": "2026-10-13T07:44:14.041Z",
+                "durationMs": 354,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2129,14 +2263,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-592f-7474-a32c-36151e5047af",
+            "id": "01a13438-1ac6-7305-a984-9d6471f2601b",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:15.823Z",
-            "durationMs": 4014,
+            "startedAt": "2026-10-13T07:44:14.537Z",
+            "durationMs": 3973,
             "artifacts": [
               {
-                "id": "01a129d6-592f-7474-a32c-36151e5047af:artifact:0",
+                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -2144,22 +2278,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Navegaci_C3_B3n_20por_20categor_C3_ADas_20de_20cultivo_20en_20-10e7a343/default/attempt-0/trace/trace.zip",
-                "size": 1341330,
-                "sha256": "c02f3d72e9e26b446e484ab6fbfe6f85a553480a549be0ad5316732b27dc32c9"
+                "size": 1141007,
+                "sha256": "c6330378ff6f19aa20bf45576ef05bec52f475683df1b9c683d594d60722b143"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d6-592f-7474-a32c-36151e5047af:0",
+                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:15.854Z",
-                "durationMs": 2531,
+                "startedAt": "2026-10-13T07:44:14.554Z",
+                "durationMs": 2591,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2169,14 +2303,14 @@
                 }
               },
               {
-                "id": "01a129d6-592f-7474-a32c-36151e5047af:1",
+                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Cultivos \\(Vegetales\\)/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:18.386Z",
-                "durationMs": 178,
+                "startedAt": "2026-10-13T07:44:17.146Z",
+                "durationMs": 189,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2186,14 +2320,14 @@
                 }
               },
               {
-                "id": "01a129d6-592f-7474-a32c-36151e5047af:2",
+                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Huerto de Hierbas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:18.565Z",
-                "durationMs": 56,
+                "startedAt": "2026-10-13T07:44:17.335Z",
+                "durationMs": 29,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2203,14 +2337,14 @@
                 }
               },
               {
-                "id": "01a129d6-592f-7474-a32c-36151e5047af:3",
+                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Huevos & Leche/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:18.621Z",
-                "durationMs": 27,
+                "startedAt": "2026-10-13T07:44:17.364Z",
+                "durationMs": 50,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2220,14 +2354,14 @@
                 }
               },
               {
-                "id": "01a129d6-592f-7474-a32c-36151e5047af:4",
+                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:4",
                 "index": 4,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Huerto de Hierbas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:18.649Z",
-                "durationMs": 545,
+                "startedAt": "2026-10-13T07:44:17.414Z",
+                "durationMs": 456,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2237,14 +2371,14 @@
                 }
               },
               {
-                "id": "01a129d6-592f-7474-a32c-36151e5047af:5",
+                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Agárico arcano/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:19.195Z",
-                "durationMs": 29,
+                "startedAt": "2026-10-13T07:44:17.870Z",
+                "durationMs": 61,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2254,14 +2388,14 @@
                 }
               },
               {
-                "id": "01a129d6-592f-7474-a32c-36151e5047af:6",
+                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Huevos & Leche/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:19.224Z",
-                "durationMs": 397,
+                "startedAt": "2026-10-13T07:44:17.931Z",
+                "durationMs": 353,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2271,14 +2405,14 @@
                 }
               },
               {
-                "id": "01a129d6-592f-7474-a32c-36151e5047af:7",
+                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Gallina/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:19.623Z",
-                "durationMs": 25,
+                "startedAt": "2026-10-13T07:44:18.284Z",
+                "durationMs": 51,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2314,14 +2448,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-68dd-7996-bc69-088646387450",
+            "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:19.837Z",
-            "durationMs": 3373,
+            "startedAt": "2026-10-13T07:44:18.511Z",
+            "durationMs": 3243,
             "artifacts": [
               {
-                "id": "01a129d6-68dd-7996-bc69-088646387450:artifact:0",
+                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -2329,22 +2463,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Navegaci_C3_B3n_20a_20Cosas_20por_20Hacer_20y_20Rutinas_20Diar-93b5840d/default/attempt-0/trace/trace.zip",
-                "size": 754873,
-                "sha256": "10b6f1645cb5b5a17cc4ea08b796eaa849405a69095a7b92f5b0e88a851ebfaa"
+                "size": 616362,
+                "sha256": "c31a845f77098d0d231ab6f239b61369bb13def7e5c6aa6936dc8dac6200c5e0"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d6-68dd-7996-bc69-088646387450:0",
+                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:19.853Z",
-                "durationMs": 2364,
+                "startedAt": "2026-10-13T07:44:18.527Z",
+                "durationMs": 2324,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2354,14 +2488,14 @@
                 }
               },
               {
-                "id": "01a129d6-68dd-7996-bc69-088646387450:1",
+                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:22.218Z",
-                "durationMs": 587,
+                "startedAt": "2026-10-13T07:44:20.851Z",
+                "durationMs": 561,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2371,14 +2505,14 @@
                 }
               },
               {
-                "id": "01a129d6-68dd-7996-bc69-088646387450:2",
+                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Lista de Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:22.806Z",
-                "durationMs": 19,
+                "startedAt": "2026-10-13T07:44:21.412Z",
+                "durationMs": 24,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2388,14 +2522,14 @@
                 }
               },
               {
-                "id": "01a129d6-68dd-7996-bc69-088646387450:3",
+                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Sincronizar Islas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:22.825Z",
-                "durationMs": 160,
+                "startedAt": "2026-10-13T07:44:21.436Z",
+                "durationMs": 29,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2405,14 +2539,14 @@
                 }
               },
               {
-                "id": "01a129d6-68dd-7996-bc69-088646387450:4",
+                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Plantillas Albion/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:22.986Z",
-                "durationMs": 35,
+                "startedAt": "2026-10-13T07:44:21.466Z",
+                "durationMs": 60,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2422,14 +2556,14 @@
                 }
               },
               {
-                "id": "01a129d6-68dd-7996-bc69-088646387450:5",
+                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Agregar Tarea o Isla/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:23.022Z",
-                "durationMs": 29,
+                "startedAt": "2026-10-13T07:44:21.527Z",
+                "durationMs": 22,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2465,14 +2599,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-760b-7262-9d90-10ae9c57107c",
+            "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:23.212Z",
-            "durationMs": 4087,
+            "startedAt": "2026-10-13T07:44:21.755Z",
+            "durationMs": 4265,
             "artifacts": [
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:artifact:0",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -2480,22 +2614,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Pesta_C3_B1a_20de_20Pesca_20_26_20Salsas_20tiene_20bot_C3_B3n_-4e5bfa9d/default/attempt-0/trace/trace.zip",
-                "size": 1696274,
-                "sha256": "82a75854082c29ee216db6de1ad6241936c12c8f9289d4bc7b6e6b1ff0c8ecee"
+                "size": 1714744,
+                "sha256": "5253592cc1667a2efe4615f0cbce469616e0f77d5710754dfc877537a7d49e36"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:0",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:23.231Z",
-                "durationMs": 2341,
+                "startedAt": "2026-10-13T07:44:21.777Z",
+                "durationMs": 2467,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2505,14 +2639,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:1",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Pesca & Salsas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:25.572Z",
-                "durationMs": 193,
+                "startedAt": "2026-10-13T07:44:24.246Z",
+                "durationMs": 179,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2522,14 +2656,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:2",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Pesca & Salsas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:25.766Z",
-                "durationMs": 403,
+                "startedAt": "2026-10-13T07:44:24.425Z",
+                "durationMs": 345,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2539,14 +2673,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:3",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Taller de Pesca, Fileteado y Salsas de Comida/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.169Z",
-                "durationMs": 32,
+                "startedAt": "2026-10-13T07:44:24.771Z",
+                "durationMs": 44,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2556,14 +2690,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:4",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Calcular/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.203Z",
-                "durationMs": 22,
+                "startedAt": "2026-10-13T07:44:24.816Z",
+                "durationMs": 21,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2573,14 +2707,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:5",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Calcular Arbitraje/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.226Z",
-                "durationMs": 110,
+                "startedAt": "2026-10-13T07:44:24.838Z",
+                "durationMs": 88,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2590,14 +2724,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:6",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Calcular Arbitraje/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.336Z",
-                "durationMs": 369,
+                "startedAt": "2026-10-13T07:44:24.927Z",
+                "durationMs": 287,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2607,14 +2741,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:7",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Veredicto del Analizador/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.705Z",
-                "durationMs": 25,
+                "startedAt": "2026-10-13T07:44:25.214Z",
+                "durationMs": 26,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2624,14 +2758,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:8",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:8",
                 "index": 8,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Venta Cruda Entera/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.731Z",
-                "durationMs": 23,
+                "startedAt": "2026-10-13T07:44:25.241Z",
+                "durationMs": 110,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2641,14 +2775,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:9",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:9",
                 "index": 9,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Filetear Picado/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.754Z",
-                "durationMs": 44,
+                "startedAt": "2026-10-13T07:44:25.351Z",
+                "durationMs": 54,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2658,14 +2792,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:10",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:10",
                 "index": 10,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Análisis Detallado por Receta de Salsa de Cocina/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.798Z",
-                "durationMs": 37,
+                "startedAt": "2026-10-13T07:44:25.406Z",
+                "durationMs": 60,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2675,14 +2809,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:11",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:11",
                 "index": 11,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.835Z",
-                "durationMs": 58,
+                "startedAt": "2026-10-13T07:44:25.467Z",
+                "durationMs": 57,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2692,14 +2826,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:12",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:12",
                 "index": 12,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:26.893Z",
-                "durationMs": 157,
+                "startedAt": "2026-10-13T07:44:25.524Z",
+                "durationMs": 152,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2709,14 +2843,14 @@
                 }
               },
               {
-                "id": "01a129d6-760b-7262-9d90-10ae9c57107c:13",
+                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:13",
                 "index": 13,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Calcular/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:27.051Z",
-                "durationMs": 17,
+                "startedAt": "2026-10-13T07:44:25.676Z",
+                "durationMs": 36,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2752,14 +2886,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a129d6-860f-7a6d-b742-8e4da84ed009",
+            "id": "01a13438-47a5-77c9-8069-45d449ee24e8",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-11T07:21:27.312Z",
-            "durationMs": 5923,
+            "startedAt": "2026-10-13T07:44:26.021Z",
+            "durationMs": 5990,
             "artifacts": [
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:artifact:0",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -2767,22 +2901,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Optimizador_20de_20Foco_20ciclo_20oficial_20con_20bot_C3_B3n_2-35a48268/default/attempt-0/trace/trace.zip",
-                "size": 2835234,
-                "sha256": "768b3aebe1adc1440fea66d163fc3ed25838410f7c1f6f3457e025eb34957230"
+                "size": 3549183,
+                "sha256": "36885ba19ad1788d2bd0e18758d394d34a0d9572608ad587cbf5fee6105d7ffc"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:0",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:27.332Z",
-                "durationMs": 2440,
+                "startedAt": "2026-10-13T07:44:26.038Z",
+                "durationMs": 2476,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2792,14 +2926,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:1",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Optimizador de Foco/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:29.773Z",
-                "durationMs": 224,
+                "startedAt": "2026-10-13T07:44:28.514Z",
+                "durationMs": 200,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2809,14 +2943,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:2",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Optimizador de Foco/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:29.997Z",
-                "durationMs": 378,
+                "startedAt": "2026-10-13T07:44:28.714Z",
+                "durationMs": 334,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2826,14 +2960,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:3",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Optimizador de Foco Diario/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:30.376Z",
-                "durationMs": 18,
+                "startedAt": "2026-10-13T07:44:29.048Z",
+                "durationMs": 17,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2843,14 +2977,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:4",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Optimizar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:30.394Z",
-                "durationMs": 20,
+                "startedAt": "2026-10-13T07:44:29.065Z",
+                "durationMs": 48,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2860,14 +2994,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:5",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Optimizar Foco Diario/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:30.414Z",
-                "durationMs": 31,
+                "startedAt": "2026-10-13T07:44:29.113Z",
+                "durationMs": 17,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2877,14 +3011,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:6",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Optimizar Foco Diario/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:30.445Z",
-                "durationMs": 1603,
+                "startedAt": "2026-10-13T07:44:29.130Z",
+                "durationMs": 1335,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2894,14 +3028,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:7",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Opción Más Rentable Hoy/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:32.049Z",
-                "durationMs": 254,
+                "startedAt": "2026-10-13T07:44:30.465Z",
+                "durationMs": 462,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2911,14 +3045,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:8",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:8",
                 "index": 8,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Ranking de Foco Calculado/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:32.303Z",
-                "durationMs": 57,
+                "startedAt": "2026-10-13T07:44:30.928Z",
+                "durationMs": 78,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2928,14 +3062,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:9",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:9",
                 "index": 9,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:32.361Z",
-                "durationMs": 90,
+                "startedAt": "2026-10-13T07:44:31.006Z",
+                "durationMs": 110,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2945,14 +3079,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:10",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:10",
                 "index": 10,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:32.452Z",
-                "durationMs": 388,
+                "startedAt": "2026-10-13T07:44:31.117Z",
+                "durationMs": 408,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2962,14 +3096,14 @@
                 }
               },
               {
-                "id": "01a129d6-860f-7a6d-b742-8e4da84ed009:11",
+                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:11",
                 "index": 11,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Optimizar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-11T07:21:32.841Z",
-                "durationMs": 17,
+                "startedAt": "2026-10-13T07:44:31.525Z",
+                "durationMs": 83,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2981,14 +3115,520 @@
             ]
           }
         ]
+      },
+      {
+        "id": "f66804f41042d26b772a0757cb9789814105fd1303c906bc8ac4ae7f83b2141a",
+        "testId": "tests/user-workflows.e2e.ts::E2E%20Workflow%3A%20Metas%20Financieras%20y%20Presupuesto%20de%20Siembra%20con%20bot%C3%B3n%20Dar%20Resultado",
+        "kind": "test",
+        "declarationIndex": 6,
+        "titlePath": [
+          "E2E Workflow: Metas Financieras y Presupuesto de Siembra con botón Dar Resultado"
+        ],
+        "file": "tests/user-workflows.e2e.ts",
+        "source": {
+          "file": "tests/user-workflows.e2e.ts",
+          "line": 143,
+          "column": 1
+        },
+        "targetId": "web-local",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a13438-5f0d-7e40-b461-7238104d727b",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-10-13T07:44:32.013Z",
+            "durationMs": 4061,
+            "artifacts": [
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:artifact:0",
+                "kind": "trace",
+                "mediaType": "application/zip",
+                "redaction": "not-required",
+                "producer": {
+                  "kind": "attempt"
+                },
+                "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Metas_20Financieras_20y_20Presupuesto_20de_20Siembra_20con_20b-d1abdeb9/default/attempt-0/trace/trace.zip",
+                "size": 1522439,
+                "sha256": "e1fa852142cd89ef273a2050d23d5fab5cb98648d5695428ead265eaebfc0dfc"
+              }
+            ],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": [
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:32.038Z",
+                "durationMs": 2388,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 144,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:1",
+                "index": 1,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: /Metas & Presupuesto/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:34.426Z",
+                "durationMs": 198,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 148,
+                  "column": 24
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.click",
+                "label": "getByRole(\"button\", name: /Metas & Presupuesto/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:34.624Z",
+                "durationMs": 338,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 149,
+                  "column": 16
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"heading\", name: /Metas Financieras & Presupuesto de Siembra/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:34.962Z",
+                "durationMs": 16,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 152,
+                  "column": 102
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:4",
+                "index": 4,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(/Listo para Proyectar tus Metas Financieras/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:34.979Z",
+                "durationMs": 36,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 155,
+                  "column": 81
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:5",
+                "index": 5,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: /Dar Resultado \\/ Evaluar Metas/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:35.015Z",
+                "durationMs": 124,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 157,
+                  "column": 25
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:6",
+                "index": 6,
+                "kind": "locator",
+                "api": "locator.click",
+                "label": "getByRole(\"button\", name: /Dar Resultado \\/ Evaluar Metas/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:35.140Z",
+                "durationMs": 290,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 160,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:7",
+                "index": 7,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(/Progreso de Metas & Hitos/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:35.430Z",
+                "durationMs": 99,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 163,
+                  "column": 64
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:8",
+                "index": 8,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(/Presupuesto de Siembra Masiva & Capital de Trabajo/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:35.531Z",
+                "durationMs": 23,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 164,
+                  "column": 89
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:9",
+                "index": 9,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: /Limpiar/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:35.554Z",
+                "durationMs": 53,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 168,
+                  "column": 26
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:10",
+                "index": 10,
+                "kind": "locator",
+                "api": "locator.click",
+                "label": "getByRole(\"button\", name: /Limpiar/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:35.607Z",
+                "durationMs": 213,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 169,
+                  "column": 18
+                }
+              },
+              {
+                "id": "01a13438-5f0d-7e40-b461-7238104d727b:11",
+                "index": 11,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(/Listo para Proyectar tus Metas Financieras/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:35.820Z",
+                "durationMs": 15,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 172,
+                  "column": 81
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3d25b05f0313ca0436d3443e61302c05d775bfb680b98d7bc8235cd3703df3e5",
+        "testId": "tests/user-workflows.e2e.ts::E2E%20Workflow%3A%20Sets%2C%20Re-Gear%20y%20Presupuesto%20de%20Bajas%20PvP%20con%20bot%C3%B3n%20Dar%20Resultado",
+        "kind": "test",
+        "declarationIndex": 7,
+        "titlePath": [
+          "E2E Workflow: Sets, Re-Gear y Presupuesto de Bajas PvP con botón Dar Resultado"
+        ],
+        "file": "tests/user-workflows.e2e.ts",
+        "source": {
+          "file": "tests/user-workflows.e2e.ts",
+          "line": 175,
+          "column": 1
+        },
+        "targetId": "web-local",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a13438-6eeb-7821-8f3b-05e73c02931a",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-10-13T07:44:36.075Z",
+            "durationMs": 3998,
+            "artifacts": [
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:artifact:0",
+                "kind": "trace",
+                "mediaType": "application/zip",
+                "redaction": "not-required",
+                "producer": {
+                  "kind": "attempt"
+                },
+                "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Sets_2C_20Re-Gear_20y_20Presupuesto_20de_20Bajas_20PvP_20con_2-e343b7de/default/attempt-0/trace/trace.zip",
+                "size": 1489078,
+                "sha256": "dea3a3b2678f9d8129bd3b396efc2d7aba55d1446d7a0c1d8bd6719035b90806"
+              }
+            ],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "steps": [
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:36.110Z",
+                "durationMs": 2375,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 176,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:1",
+                "index": 1,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: /Sets & Re-Gear/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:38.485Z",
+                "durationMs": 169,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 180,
+                  "column": 24
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.click",
+                "label": "getByRole(\"button\", name: /Sets & Re-Gear/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:38.655Z",
+                "durationMs": 450,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 181,
+                  "column": 16
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"heading\", name: /Calculadora de Sets, Re-Gear & Presupuesto de Bajas/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:39.105Z",
+                "durationMs": 21,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 184,
+                  "column": 111
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:4",
+                "index": 4,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: /Limpiar/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:39.126Z",
+                "durationMs": 24,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 188,
+                  "column": 26
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.click",
+                "label": "getByRole(\"button\", name: /Limpiar/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:39.150Z",
+                "durationMs": 268,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 189,
+                  "column": 18
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:6",
+                "index": 6,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(/Listo para Calcular/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:39.418Z",
+                "durationMs": 21,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 192,
+                  "column": 58
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:7",
+                "index": 7,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: /Dar Resultado \\/ Calcular Presupuesto/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:39.440Z",
+                "durationMs": 20,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 196,
+                  "column": 25
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:8",
+                "index": 8,
+                "kind": "locator",
+                "api": "locator.click",
+                "label": "getByRole(\"button\", name: /Dar Resultado \\/ Calcular Presupuesto/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:39.461Z",
+                "durationMs": 301,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 199,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:9",
+                "index": 9,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(/Presupuesto de Bajas Calculado/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:39.762Z",
+                "durationMs": 53,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 200,
+                  "column": 69
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:10",
+                "index": 10,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(/Coste por Muerte \\(1x Re-Gear\\)/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:39.816Z",
+                "durationMs": 17,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 201,
+                  "column": 70
+                }
+              },
+              {
+                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:11",
+                "index": 11,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(/Reserva para 3 Bajas/i)",
+                "status": "passed",
+                "startedAt": "2026-10-13T07:44:39.833Z",
+                "durationMs": 21,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/user-workflows.e2e.ts",
+                  "line": 202,
+                  "column": 59
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "errors": [],
     "summary": {
-      "discovered": 36,
-      "selected": 36,
-      "executed": 36,
-      "passed": 36,
+      "discovered": 39,
+      "selected": 39,
+      "executed": 39,
+      "passed": 39,
       "failed": 0,
       "interrupted": 0,
       "flaky": 0,
@@ -3002,11 +3642,11 @@
       "maxModelTokensPerCall": 64000
     },
     "usage": {
-      "discoveredResults": 36,
+      "discoveredResults": 39,
       "maxAgentContextBytes": 0,
       "maxLedgerBytes": 0,
       "maxObservationBytes": 0,
-      "artifactBytes": 12078189,
+      "artifactBytes": 16180430,
       "downloads": 0,
       "events": 0,
       "modelTokens": 0,

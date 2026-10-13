@@ -26,6 +26,8 @@ export type AppTab =
   | 'simulator'
   | 'value_added'
   | 'fishing_sauces'
+  | 'goals'
+  | 'regear'
   | 'guide';
 
 export type CityId = 'fort_sterling' | 'lymhurst' | 'bridgewatch' | 'martlock' | 'thetford' | 'caerleon' | 'brecilien';
@@ -68,6 +70,8 @@ export interface DailyLogEntry {
   itemId: string;
   itemName: string;
   tier: number;
+  characterId?: string; // ID del Alt / Personaje que cosechó
+  characterName?: string; // Nombre del Alt (ej. "Principal", "Alt Martlock")
   
   // Capacidad
   plotsCount: number; // Cantidad de parcelas (ej: 5)

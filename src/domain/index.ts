@@ -24,6 +24,12 @@ export * from './models/redZoneTransport';
 export * from './models/butcher';
 export * from './models/cloudSync';
 export * from './models/fishingSauces';
+export * from './models/goals';
+export * from './models/feedAdvisor';
+export * from './models/marketOrders';
+export * from './models/loadouts';
+export * from './models/journalSupply';
+export * from './models/destinyFame';
 
 // Exportación de Casos de Uso Puros
 export * from './use-cases/calculateFocusRanking';
@@ -57,4 +63,11 @@ export * from './use-cases/calculateRedZoneTransport';
 export * from './use-cases/findCookingOpportunitiesFromHarvest';
 export * from './use-cases/cloudSyncEngine';
 export * from './use-cases/calculateFishingSaucesEconomy';
+export * from './use-cases/calculateGoalProgress';
+export * from './use-cases/calculateSeedBudget';
+export * from './use-cases/calculateLeastCostFeed';
+export * from './use-cases/calculateMarketOrderExpirations';
+export * from './use-cases/calculateLoadoutRegear';
+export * from './use-cases/calculateJournalSupply';
+export * from './use-cases/calculateDestinyFameTomes';
 

@@ -23,7 +23,7 @@ import {
   RotateCcw,
   AlertTriangle,
 } from 'lucide-react';
-import { MOUNTS_CATALOG, MountDefinition, MountCategory } from '../domain';
+import { MOUNTS_CATALOG, MountDefinition, MountCategory, calculateLeastCostFeed } from '../domain';
 import { useMountEconomy } from '../hooks/useMountEconomy';
 import { useDailyEvents } from '../hooks/useDailyEvents';
 import { NumericInput } from './NumericInput';
@@ -64,6 +64,10 @@ export const MountsBreedingView: React.FC<MountsBreedingViewProps> = ({ dailyEve
     clearResult,
     dailyMountsBonusRRR,
   } = mountEconomy;
+
+  const feedAdvice = useMemo(() => {
+    return calculateLeastCostFeed(currentMount.diet);
+  }, [currentMount.diet]);
 
   const scrollTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -474,6 +478,27 @@ export const MountsBreedingView: React.FC<MountsBreedingViewProps> = ({ dailyEve
                 <div className="text-[10px] text-slate-400 mt-1">
                   Consume {currentMount.growthCycles * 10} u. en {currentMount.growthCycles} ciclos
                 </div>
+
+                {feedAdvice.cheapestOption && (
+                  <div className="mt-2.5 p-2 rounded-lg bg-emerald-950/40 border border-emerald-800/40 text-[11px] flex items-center justify-between gap-2">
+                    <div className="min-w-0">
+                      <div className="text-emerald-300 font-bold truncate">
+                        💡 Menor Coste Hoy: {feedAdvice.cheapestOption.nameEs}
+                      </div>
+                      <div className="text-[10px] text-slate-400">
+                        {feedAdvice.cheapestOption.unitPrice} 🪙/u. {feedAdvice.maxSavingsPercent > 0 && `(ahorro hasta -${feedAdvice.maxSavingsPercent}%)`}
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => updatePrice('foodPrice', feedAdvice.cheapestOption!.unitPrice)}
+                      className="px-2 py-1 bg-emerald-700 hover:bg-emerald-600 text-white font-bold rounded text-[10px] transition-colors cursor-pointer shrink-0"
+                      title="Aplicar precio del alimento más económico"
+                    >
+                      Aplicar
+                    </button>
+                  </div>
+                )}
               </div>
 
               {/* 3. Precio Material de Ensillado */}

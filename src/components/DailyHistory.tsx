@@ -49,7 +49,34 @@ export const DailyHistory: React.FC<Props> = ({
 }) => {
   const [selectedCityFilter, setSelectedCityFilter] = useState<string>('all');
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<string>('all');
+  const [selectedCharacterFilter, setSelectedCharacterFilter] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
+
+  // Lista de personajes únicos presentes en los registros
+  const charactersInLogs = useMemo(() => {
+    const map = new Map<string, string>();
+    logs.forEach((l) => {
+      if (l.characterId && l.characterName) {
+        map.set(l.characterId, l.characterName);
+      }
+    });
+    return Array.from(map.entries()).map(([id, name]) => ({ id, name }));
+  }, [logs]);
+
+  // Desglose de ganancias por personaje (Alts Breakdown)
+  const characterBreakdown = useMemo(() => {
+    const stats: Record<string, { name: string; totalProfit: number; harvestsCount: number }> = {};
+    logs.forEach((l) => {
+      const charId = l.characterId || 'unassigned';
+      const charName = l.characterName || 'Sin Personaje Asignado';
+      if (!stats[charId]) {
+        stats[charId] = { name: charName, totalProfit: 0, harvestsCount: 0 };
+      }
+      stats[charId].totalProfit += l.netProfit || 0;
+      stats[charId].harvestsCount += 1;
+    });
+    return Object.entries(stats).map(([id, data]) => ({ id, ...data }));
+  }, [logs]);
 
   // Estados de confirmación dentro de la app (seguros para iframe)
   const [showClearAllConfirm, setShowClearAllConfirm] = useState<boolean>(false);
@@ -74,6 +101,13 @@ export const DailyHistory: React.FC<Props> = ({
     return logs.filter((log) => {
       if (selectedCityFilter !== 'all' && log.cityId !== selectedCityFilter) return false;
       if (selectedCategoryFilter !== 'all' && log.category !== selectedCategoryFilter) return false;
+      if (selectedCharacterFilter !== 'all') {
+        if (selectedCharacterFilter === 'unassigned') {
+          if (log.characterId) return false;
+        } else if (log.characterId !== selectedCharacterFilter) {
+          return false;
+        }
+      }
       if (searchQuery.trim()) {
         const query = searchQuery.toLowerCase();
         const matchesName = (log.itemName || '').toLowerCase().includes(query);
@@ -82,7 +116,7 @@ export const DailyHistory: React.FC<Props> = ({
       }
       return true;
     });
-  }, [logs, selectedCityFilter, selectedCategoryFilter, searchQuery]);
+  }, [logs, selectedCityFilter, selectedCategoryFilter, selectedCharacterFilter, searchQuery]);
 
   // Paginación defensiva (20 registros por página)
   const ITEMS_PER_PAGE = 20;
@@ -91,7 +125,7 @@ export const DailyHistory: React.FC<Props> = ({
   // Reiniciar a página 1 si cambian los filtros o la búsqueda
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedCityFilter, selectedCategoryFilter, searchQuery]);
+  }, [selectedCityFilter, selectedCategoryFilter, selectedCharacterFilter, searchQuery]);
 
   const totalPages = Math.max(1, Math.ceil(filteredLogs.length / ITEMS_PER_PAGE));
   const paginatedLogs = useMemo(() => {
@@ -437,12 +471,75 @@ export const DailyHistory: React.FC<Props> = ({
         </div>
       </div>
 
+      {/* Desglose de Ganancias por Personaje (Alts Breakdown) */}
+      {characterBreakdown.length > 0 && (
+        <div className="mb-5 bg-slate-950/90 border border-slate-800 rounded-xl p-3.5">
+          <div className="text-xs font-bold text-slate-300 mb-2 flex items-center justify-between">
+            <span className="flex items-center gap-1.5">
+              <span>👤</span> Desglose por Personaje (Alts):
+            </span>
+            <span className="text-[11px] text-slate-500 font-normal">
+              {characterBreakdown.length} perfil(es) con cosechas
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+            {characterBreakdown.map((char) => {
+              const isSelected = selectedCharacterFilter === char.id;
+              const isPositive = char.totalProfit >= 0;
+              return (
+                <button
+                  type="button"
+                  key={char.id}
+                  onClick={() => setSelectedCharacterFilter(isSelected ? 'all' : char.id)}
+                  className={`p-2 rounded-lg border text-left transition-all cursor-pointer ${
+                    isSelected
+                      ? 'bg-amber-500/10 border-amber-500/50 shadow-sm'
+                      : 'bg-slate-900/60 border-slate-800 hover:border-slate-700'
+                  }`}
+                >
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-bold text-slate-200 truncate">{char.name}</span>
+                    <span className="text-[10px] text-slate-400 tabular-nums">
+                      {char.harvestsCount} reg.
+                    </span>
+                  </div>
+                  <div
+                    className={`text-xs font-black font-mono tabular-nums mt-0.5 ${
+                      isPositive ? 'text-emerald-400' : 'text-rose-400'
+                    }`}
+                  >
+                    {isPositive ? '+' : ''}
+                    {formatSilver(char.totalProfit)}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {/* Barra de Filtros y Búsqueda */}
       <div className="bg-slate-950 p-3 rounded-lg border border-slate-800 flex flex-col md:flex-row gap-3 items-center justify-between mb-5">
         <div className="flex flex-wrap items-center gap-2 w-full md:w-auto text-xs">
           <span className="text-slate-400 flex items-center gap-1 font-semibold">
             <Filter size={14} /> Filtros:
           </span>
+
+          {/* Filtro Personaje / Alt */}
+          <select
+            value={selectedCharacterFilter}
+            onChange={(e) => setSelectedCharacterFilter(e.target.value)}
+            className="bg-slate-900 border border-slate-700 rounded px-2 py-1 text-slate-200 text-xs focus:outline-none cursor-pointer"
+          >
+            <option value="all">Todos los Personajes</option>
+            {charactersInLogs.map((char) => (
+              <option key={char.id} value={char.id}>
+                👤 {char.name}
+              </option>
+            ))}
+            <option value="unassigned">Sin Personaje Asignado</option>
+          </select>
 
           {/* Filtro Ciudad */}
           <select
@@ -538,6 +635,11 @@ export const DailyHistory: React.FC<Props> = ({
                         <span className="text-xs text-slate-400 font-mono">
                           📍 {getCityName(log.cityId)}
                         </span>
+                        {log.characterName && (
+                          <span className="text-[11px] font-semibold text-amber-300 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
+                            👤 {log.characterName}
+                          </span>
+                        )}
                       </div>
 
                       <div className="flex flex-wrap items-center gap-3 text-xs text-slate-400 mt-1 font-mono tabular-nums">

@@ -19,6 +19,7 @@ import {
 import { loadPriceMemory } from '../utils/storage';
 import { AlbionItemBadge } from './AlbionItemBadge';
 import { formatSilver } from '../utils/albionColors';
+import { calculateDestinyFameTomes, DestinyMasteryCategory } from '../domain';
 import {
   Zap,
   Award,
@@ -81,6 +82,22 @@ export const FocusMasteryCalculator: React.FC<FocusMasteryCalculatorProps> = ({
 
   // Monitor de foco actual del jugador (sincronizado con el personaje activo si existe)
   const [currentFocus, setCurrentFocus] = useState<number>(() => activeCharacterFocus ?? 10000);
+
+  // Estado de Calculadora de Tomos de Perspicacia & Fama
+  const [showFameCalculator, setShowFameCalculator] = useState<boolean>(false);
+  const [fameCategory, setFameCategory] = useState<DestinyMasteryCategory>('farming');
+  const [fameCurrentLevel, setFameCurrentLevel] = useState<number>(1);
+  const [fameTargetLevel, setFameTargetLevel] = useState<number>(100);
+  const [tomeMarketPrice, setTomeMarketPrice] = useState<number>(24000);
+
+  const fameAnalysis = useMemo(() => {
+    return calculateDestinyFameTomes({
+      category: fameCategory,
+      currentLevel: fameCurrentLevel,
+      targetLevel: fameTargetLevel,
+      tomeMarketPrice,
+    });
+  }, [fameCategory, fameCurrentLevel, fameTargetLevel, tomeMarketPrice]);
 
   // Sincronizar foco si cambia el personaje activo externamente
   useEffect(() => {
@@ -574,7 +591,20 @@ export const FocusMasteryCalculator: React.FC<FocusMasteryCalculatorProps> = ({
         </div>
 
         {/* Acciones de Lote para la Rama */}
-        <div className="flex items-center gap-2 text-xs">
+        <div className="flex flex-wrap items-center gap-2 text-xs">
+          <button
+            type="button"
+            onClick={() => setShowFameCalculator(!showFameCalculator)}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg font-bold transition-all cursor-pointer border ${
+              showFameCalculator
+                ? 'bg-amber-500 text-slate-950 border-amber-500 shadow-sm'
+                : 'bg-slate-900 text-amber-400 border-amber-500/30 hover:bg-slate-800'
+            }`}
+          >
+            <Award size={14} />
+            <span>⭐ Tomos & Fama (Subir a 100)</span>
+          </button>
+
           {savedSuccess && (
             <span className="flex items-center gap-1 text-[11px] font-bold text-emerald-400 bg-emerald-950/70 border border-emerald-500/50 px-2.5 py-1 rounded-lg">
               <Check size={13} /> Guardado
@@ -600,6 +630,126 @@ export const FocusMasteryCalculator: React.FC<FocusMasteryCalculatorProps> = ({
           </button>
         </div>
       </div>
+
+      {/* Panel Desplegable: Calculadora de Tomos & Fama de la Tabla del Destino */}
+      {showFameCalculator && (
+        <div className="bg-slate-900 border border-amber-500/40 rounded-2xl p-5 shadow-2xl space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+            <div>
+              <h3 className="text-sm font-black text-slate-100 flex items-center gap-2">
+                <Award size={18} className="text-amber-400" />
+                <span>Calculadora de Fama & Tomos de la Perspicacia (Curva Oficial de Albion)</span>
+              </h3>
+              <p className="text-xs text-slate-400 mt-0.5">
+                Calcula la fama restante entre niveles y el coste de comprar Tomos de 10.000 para maximizar tu FCE y reducir el foco.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setShowFameCalculator(false)}
+              className="text-xs text-slate-400 hover:text-slate-200 self-end sm:self-auto"
+            >
+              Cerrar
+            </button>
+          </div>
+
+          {/* Controles de Entrada */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div>
+              <label className="text-[11px] font-semibold text-slate-300 block mb-1">
+                Categoría de Especialización
+              </label>
+              <select
+                value={fameCategory}
+                onChange={(e) => setFameCategory(e.target.value as DestinyMasteryCategory)}
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 focus:outline-none focus:border-amber-500 cursor-pointer"
+              >
+                <option value="farming">🌾 Agricultura / Ganadería</option>
+                <option value="refining">🪓 Refinado de Recursos</option>
+                <option value="crafting">🔨 Crafteo / Forja de Equipo</option>
+                <option value="combat">⚔️ Combate (Armas & Armaduras)</option>
+              </select>
+            </div>
+
+            <div>
+              <label className="text-[11px] font-semibold text-slate-300 block mb-1">
+                Nivel Actual (1..100): <span className="text-amber-400 font-bold">{fameCurrentLevel}</span>
+              </label>
+              <input
+                type="number"
+                min="1"
+                max="99"
+                value={fameCurrentLevel}
+                onChange={(e) => setFameCurrentLevel(Math.max(1, Math.min(99, Number(e.target.value) || 1)))}
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 font-mono tabular-nums focus:outline-none focus:border-amber-500"
+              />
+            </div>
+
+            <div>
+              <label className="text-[11px] font-semibold text-slate-300 block mb-1">
+                Nivel Objetivo (1..100): <span className="text-emerald-400 font-bold">{fameTargetLevel}</span>
+              </label>
+              <input
+                type="number"
+                min="2"
+                max="100"
+                value={fameTargetLevel}
+                onChange={(e) => setFameTargetLevel(Math.max(2, Math.min(100, Number(e.target.value) || 100)))}
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 font-mono tabular-nums focus:outline-none focus:border-amber-500"
+              />
+            </div>
+
+            <div>
+              <label className="text-[11px] font-semibold text-slate-300 block mb-1">
+                Precio Tomo (10k fama 🪙)
+              </label>
+              <input
+                type="number"
+                min="1000"
+                value={tomeMarketPrice}
+                onChange={(e) => setTomeMarketPrice(Math.max(1000, Number(e.target.value) || 24000))}
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 font-mono tabular-nums focus:outline-none focus:border-amber-500"
+              />
+            </div>
+          </div>
+
+          {/* Tarjetas de Resultados */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1">
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-3">
+              <div className="text-[10px] text-slate-400">Fama Restante Necesaria:</div>
+              <div className="text-base font-black text-amber-300 mt-0.5 font-mono tabular-nums">
+                {fameAnalysis.fameRequiredTotal.toLocaleString()} fama
+              </div>
+            </div>
+
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-3">
+              <div className="text-[10px] text-slate-400">Tomos de 10.000 Requeridos:</div>
+              <div className="text-base font-black text-slate-100 mt-0.5 font-mono tabular-nums">
+                ~{fameAnalysis.tomesRequired.toLocaleString()} tomos
+              </div>
+            </div>
+
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-3">
+              <div className="text-[10px] text-slate-400">Coste Total en Plata:</div>
+              <div className="text-base font-black text-rose-400 mt-0.5 font-mono tabular-nums">
+                {formatSilver(fameAnalysis.totalSilverCost)}
+              </div>
+            </div>
+
+            <div className="bg-slate-950 border border-slate-800 rounded-xl p-3">
+              <div className="text-[10px] text-slate-400">FCE Ganado al Subir:</div>
+              <div className="text-base font-black text-emerald-400 mt-0.5 font-mono tabular-nums">
+                +{fameAnalysis.focusEfficiencyGainedFCE} FCE
+              </div>
+            </div>
+          </div>
+
+          <div className="text-[11px] text-amber-300/90 bg-amber-500/10 p-2.5 rounded-lg border border-amber-500/20">
+            💡 {fameAnalysis.advice}
+          </div>
+        </div>
+      )}
 
       {/* Grid Principal: Configuración de Niveles vs Métricas en Tiempo Real */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

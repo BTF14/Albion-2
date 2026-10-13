@@ -18,9 +18,12 @@ import {
   ArrowRight,
   Truck,
   Calculator,
+  BookOpen,
+  Plus,
+  Trash2,
 } from 'lucide-react';
 import { useLabourersEconomy } from '../hooks/useLabourersEconomy';
-import { LabourerType } from '../domain';
+import { LabourerType, calculateJournalSupply, LabourerSupplyRow } from '../domain';
 import { NumericInput } from './NumericInput';
 import { AlbionItemBadge } from './AlbionItemBadge';
 import { formatSilver } from '../utils/albionColors';
@@ -58,6 +61,15 @@ export const LabourersCalculatorView: React.FC<LabourersCalculatorViewProps> = (
 
   const [hasCalculated, setHasCalculated] = useState<boolean>(false);
   const [isStale, setIsStale] = useState<boolean>(false);
+
+  // Sub-pestaña: Calculadora o Planificador de Diarios
+  const [activeMode, setActiveMode] = useState<'calculator' | 'journal_supply'>('calculator');
+  const [supplyRows, setSupplyRows] = useState<LabourerSupplyRow[]>([
+    { id: 'sup_1', labourerType: 'lumberjack', tier: 6, labourersCount: 15 },
+    { id: 'sup_2', labourerType: 'blacksmith', tier: 7, labourersCount: 15 },
+  ]);
+
+  const journalAnalysis = calculateJournalSupply(supplyRows);
 
   const handleConfigChange = (newConfig: Parameters<typeof updateConfig>[0]) => {
     updateConfig(newConfig);
@@ -134,8 +146,40 @@ export const LabourersCalculatorView: React.FC<LabourersCalculatorViewProps> = (
         </div>
       </div>
 
-      {/* Grid de Configuración y Resultados */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      {/* Selector de Sub-Pestaña */}
+      <div className="flex items-center gap-2 border-b border-slate-800 pb-2">
+        <button
+          type="button"
+          onClick={() => setActiveMode('calculator')}
+          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
+            activeMode === 'calculator'
+              ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm'
+              : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
+          }`}
+        >
+          <Home size={15} />
+          <span>Calculadora de Casas & Obreros</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setActiveMode('journal_supply')}
+          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
+            activeMode === 'journal_supply'
+              ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-sm'
+              : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
+          }`}
+        >
+          <BookOpen size={15} />
+          <span>Planificador de Suministro de Diarios (22h & Semanal)</span>
+          <span className="text-[10px] bg-amber-500/30 text-amber-200 px-1.5 py-0.5 rounded font-mono">
+            {journalAnalysis.totalLabourers} obreros
+          </span>
+        </button>
+      </div>
+
+      {activeMode === 'calculator' ? (
+        /* Grid de Configuración y Resultados */
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Columna Izquierda: Configuración del Trabajador y la Casa (7 cols) */}
         <div className="lg:col-span-7 space-y-6">
           {/* 1. Selección de Trabajador y Tier */}
@@ -651,6 +695,172 @@ export const LabourersCalculatorView: React.FC<LabourersCalculatorViewProps> = (
           )}
         </div>
       </div>
+      ) : (
+        /* Modo: Planificador de Suministro de Diarios */
+        <div className="space-y-6">
+          {/* Métricas Resumen */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
+              <div className="text-xs text-slate-400 font-medium">Obreros Monitoreados:</div>
+              <div className="text-2xl font-black text-slate-100 mt-1 tabular-nums font-mono">
+                {journalAnalysis.totalLabourers} obreros
+              </div>
+              <div className="text-[11px] text-slate-500 mt-0.5">En tus casas y Guild Halls</div>
+            </div>
+
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
+              <div className="text-xs text-slate-400 font-medium">Demanda por Ciclo (22h):</div>
+              <div className="text-2xl font-black text-amber-400 mt-1 tabular-nums font-mono">
+                {journalAnalysis.dailyJournalsDemand} diarios / día
+              </div>
+              <div className="text-[11px] text-slate-500 mt-0.5">1 diario lleno por trabajador</div>
+            </div>
+
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-4">
+              <div className="text-xs text-slate-400 font-medium">Demanda Semanal (7 ciclos):</div>
+              <div className="text-2xl font-black text-cyan-400 mt-1 tabular-nums font-mono">
+                {journalAnalysis.weeklyJournalsDemand} diarios / sem
+              </div>
+              <div className="text-[11px] text-slate-500 mt-0.5">Para mantener stock continuo</div>
+            </div>
+
+            <div className="bg-emerald-950/20 border border-emerald-500/30 rounded-xl p-4">
+              <div className="text-xs text-emerald-300 font-bold">Ahorro Llenando Diarios Propios:</div>
+              <div className="text-2xl font-black text-emerald-400 mt-1 tabular-nums font-mono">
+                +{formatSilver(journalAnalysis.dailySavingsFillingYourself)}
+              </div>
+              <div className="text-[11px] text-emerald-300/80 mt-0.5">
+                -{journalAnalysis.savingsPercent}% vs compra en subasta
+              </div>
+            </div>
+          </div>
+
+          {/* Suministro por Grupos */}
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-3">
+              <div>
+                <h3 className="text-base font-bold text-slate-100 flex items-center gap-2">
+                  <BookOpen size={18} className="text-amber-400" />
+                  <span>Suministro de Diarios por Grupo de Obreros</span>
+                </h3>
+                <p className="text-xs text-slate-400 mt-0.5">
+                  Compara el coste diario de comprar diarios llenos en subasta vs comprar vacíos y llenarlos crafteando.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => {
+                  setSupplyRows((prev) => [
+                    ...prev,
+                    { id: `sup_${Date.now()}`, labourerType: 'lumberjack', tier: 6, labourersCount: 5 },
+                  ]);
+                }}
+                className="px-3 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs rounded-xl shadow-md transition-all flex items-center gap-1 cursor-pointer self-start sm:self-auto"
+              >
+                <Plus size={15} />
+                <span>+ Agregar Grupo</span>
+              </button>
+            </div>
+
+            {/* Lista de Grupos */}
+            <div className="space-y-2">
+              {supplyRows.map((row) => (
+                <div
+                  key={row.id}
+                  className="p-3.5 bg-slate-950 border border-slate-800 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+                >
+                  <div className="flex flex-wrap items-center gap-3">
+                    <div>
+                      <label className="text-[10px] text-slate-500 block">Oficio del Obrero</label>
+                      <select
+                        value={row.labourerType}
+                        onChange={(e) => {
+                          const val = e.target.value as LabourerType;
+                          setSupplyRows((prev) =>
+                            prev.map((r) => (r.id === row.id ? { ...r, labourerType: val } : r))
+                          );
+                        }}
+                        className="bg-slate-900 border border-slate-800 rounded px-2 py-1 text-xs text-slate-100 focus:outline-none"
+                      >
+                        {catalog.map((c) => (
+                          <option key={c.id} value={c.id}>
+                            {c.nameEs}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="text-[10px] text-slate-500 block">Tier del Diario</label>
+                      <select
+                        value={row.tier}
+                        onChange={(e) => {
+                          const val = Number(e.target.value);
+                          setSupplyRows((prev) =>
+                            prev.map((r) => (r.id === row.id ? { ...r, tier: val } : r))
+                          );
+                        }}
+                        className="bg-slate-900 border border-slate-800 rounded px-2 py-1 text-xs text-slate-100 focus:outline-none"
+                      >
+                        {[2, 3, 4, 5, 6, 7, 8].map((t) => (
+                          <option key={t} value={t}>
+                            T{t}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="text-[10px] text-slate-500 block">Nº de Obreros</label>
+                      <input
+                        type="number"
+                        min="1"
+                        max="300"
+                        value={row.labourersCount}
+                        onChange={(e) => {
+                          const val = Math.max(1, Number(e.target.value) || 1);
+                          setSupplyRows((prev) =>
+                            prev.map((r) => (r.id === row.id ? { ...r, labourersCount: val } : r))
+                          );
+                        }}
+                        className="w-20 bg-slate-900 border border-slate-800 rounded px-2 py-1 text-xs text-slate-100 font-mono tabular-nums focus:outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between sm:justify-end gap-3">
+                    <div className="text-right text-xs tabular-nums font-mono">
+                      <span className="text-slate-400">Demanda: </span>
+                      <span className="text-amber-400 font-bold">{row.labourersCount} diarios / 22h</span>
+                      <span className="text-slate-500 block text-[10px]">
+                        ({row.labourersCount * 7} diarios / semana)
+                      </span>
+                    </div>
+
+                    {supplyRows.length > 1 && (
+                      <button
+                        type="button"
+                        onClick={() => setSupplyRows((prev) => prev.filter((r) => r.id !== row.id))}
+                        className="p-1.5 text-slate-500 hover:text-rose-400 rounded-lg hover:bg-rose-950/30 transition-colors"
+                        title="Eliminar grupo"
+                      >
+                        <Trash2 size={15} />
+                      </button>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Tarjeta de Ahorro y Recomendación */}
+            <div className="p-3.5 bg-amber-500/10 border border-amber-500/30 rounded-xl text-xs text-amber-300 flex items-start gap-2">
+              <Info size={16} className="shrink-0 mt-0.5" />
+              <span>{journalAnalysis.recommendation}</span>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

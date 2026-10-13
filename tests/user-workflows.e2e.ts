@@ -140,5 +140,64 @@ test('E2E Workflow: Optimizador de Foco ciclo oficial con botón Dar Resultado',
   await expect(screen.getByText(/Listo para Optimizar/i)).toBeVisible();
 });
 
+test('E2E Workflow: Metas Financieras y Presupuesto de Siembra con botón Dar Resultado', async ({ app, screen }) => {
+  await app.open('/');
 
+  // Navegar a Metas & Presupuesto
+  const navBtn = screen.getByRole('button', { name: /Metas & Presupuesto/i });
+  await expect(navBtn).toBeVisible();
+  await navBtn.click();
 
+  // Verificar título
+  await expect(screen.getByRole('heading', { name: /Metas Financieras & Presupuesto de Siembra/i })).toBeVisible();
+
+  // Estado inicial de espera
+  await expect(screen.getByText(/Listo para Proyectar tus Metas Financieras/i)).toBeVisible();
+  const calcBtn = screen.getByRole('button', { name: /Dar Resultado \/ Evaluar Metas/i });
+  await expect(calcBtn).toBeVisible();
+
+  // Ejecutar cálculo
+  await calcBtn.click();
+
+  // Verificar que se revelan los resultados
+  await expect(screen.getByText(/Progreso de Metas & Hitos/i)).toBeVisible();
+  await expect(screen.getByText(/Presupuesto de Siembra Masiva & Capital de Trabajo/i)).toBeVisible();
+
+  // Probar botón Limpiar
+  const clearBtn = screen.getByRole('button', { name: /Limpiar/i });
+  await expect(clearBtn).toBeVisible();
+  await clearBtn.click();
+
+  // Vuelve a estar en espera
+  await expect(screen.getByText(/Listo para Proyectar tus Metas Financieras/i)).toBeVisible();
+});
+
+test('E2E Workflow: Sets, Re-Gear y Presupuesto de Bajas PvP con botón Dar Resultado', async ({ app, screen }) => {
+  await app.open('/');
+
+  // Navegar a Sets & Re-Gear
+  const navBtn = screen.getByRole('button', { name: /Sets & Re-Gear/i });
+  await expect(navBtn).toBeVisible();
+  await navBtn.click();
+
+  // Verificar título del módulo
+  await expect(screen.getByRole('heading', { name: /Calculadora de Sets, Re-Gear & Presupuesto de Bajas/i })).toBeVisible();
+
+  // Probar botón Limpiar
+  const clearBtn = screen.getByRole('button', { name: /Limpiar/i });
+  await expect(clearBtn).toBeVisible();
+  await clearBtn.click();
+
+  // Vuelve a estar en espera: Listo para Calcular
+  await expect(screen.getByText(/Listo para Calcular/i)).toBeVisible();
+
+  // Ahora el botón dice "Dar Resultado / Calcular Presupuesto"
+  const calcBtn = screen.getByRole('button', { name: /Dar Resultado \/ Calcular Presupuesto/i });
+  await expect(calcBtn).toBeVisible();
+
+  // Volver a calcular
+  await calcBtn.click();
+  await expect(screen.getByText(/Presupuesto de Bajas Calculado/i)).toBeVisible();
+  await expect(screen.getByText(/Coste por Muerte \(1x Re-Gear\)/i)).toBeVisible();
+  await expect(screen.getByText(/Reserva para 3 Bajas/i)).toBeVisible();
+});
