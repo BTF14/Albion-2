@@ -1,8 +1,8 @@
 # Informe Oficial de Compilación & Verificación (Build & QA Report)
 ## Albion Farm & Economy Tracker
 
-**Fecha de Ejecución**: 2026-10-13  
-**Estado General**: ✅ **EXITOSO / CERO ERRORES**  
+**Fecha de Ejecución**: 2026-10-14  
+**Estado General**: ✅ **EXITOSO / CERO ERRORES (100% OPERATIVO)**  
 **Entorno**: Node.js v22 + Vite 6.2 + TypeScript 5.8 (Strict Mode) + Tailwind CSS 4
 
 ---
@@ -15,7 +15,7 @@
 | **Auditoría de Seguridad Cloudflare** | `npm run audit:test` | ✅ **65/65 Aprobadas** | 34 pruebas de findings + 31 de ledger |
 | **Pruebas de Dominio Puro** | `npm run test:domain` | ✅ **14/14 Aprobadas** | Node.js Test Runner (`node --test`) |
 | **Compilación TypeScript** | `npm run lint` (`tsc --noEmit`) | ✅ **0 Errores** | Modo estricto (`"strict": true`) sin `any` ni `@ts-ignore` |
-| **Pruebas de Usuario E2E (Playwright)** | `npm run test:e2e` (`e2e run`) | ✅ **39/39 Aprobadas** | 5 archivos de pruebas, 100% de cobertura de flujos |
+| **Pruebas de Usuario E2E (Playwright)** | `npm run test:e2e` (`e2e run`) | ✅ **39/39 Aprobadas** | 5 suites completas, 100% de cobertura de flujos |
 | **Compilación de Producción** | `npm run build` (`vite build`) | ✅ **Éxito** | Bundles optimizados con partición de paquetes (`vendor-react`, `vendor-icons`, `vendor-charts`) |
 
 ---
@@ -44,10 +44,14 @@
 - `tests/recipes-audit.e2e.ts` (9 tests): Validación de recetas oficiales de Albion Online.
 - `tests/storage-and-backup.e2e.ts` (6 tests): Persistencia local, exportación e importación segura.
 - `tests/user-workflows.e2e.ts` (8 tests):
-  - Flujo de Registro Diario con memoria de precios.
-  - Flujo del Optimizador de Foco Diario con botón de cálculo oficial y limpieza.
+  - Apertura y cierre de la Paleta de Comandos (`Ctrl+K`).
+  - Apertura y controles del Modal de Respaldo de Datos (JSON v2).
+  - Navegación por categorías de cultivo en Registro Diario.
+  - Navegación a Cosas por Hacer y Rutinas Diarias.
+  - Flujo de Pesca & Salsas con ciclo oficial de cálculo y botón Dar Resultado.
+  - Flujo del Optimizador de Foco Diario con botón Dar Resultado y Limpiar.
   - Flujo de Metas Financieras y Presupuesto de Siembra Masiva.
-  - Flujo de Sets, Re-Gear y Presupuesto de Bajas PvP.
+  - Flujo de Sets, Re-Gear y Presupuesto de Bajas PvP con reservas para 1x, 3x, 5x y 10x bajas.
 
 ---
 
