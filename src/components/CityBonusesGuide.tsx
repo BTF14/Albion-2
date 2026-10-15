@@ -188,27 +188,27 @@ export const CityBonusesGuide: React.FC<Props> = ({ selectedCityId, onSelectCity
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 text-slate-300">
               <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800/80">
                 <span className="font-bold text-slate-100 block">Gallina (T3)</span>
-                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Trigo (T4)</span>
+                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Trigo (T3)</span>
                 <span className="text-[10px] text-slate-500">Cultivo: Martlock</span>
               </div>
               <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800/80">
                 <span className="font-bold text-slate-100 block">Cabra (T4)</span>
-                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Nabos (T5)</span>
+                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Nabos (T4)</span>
                 <span className="text-[10px] text-slate-500">Cultivo: Fort Sterling</span>
               </div>
               <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800/80">
                 <span className="font-bold text-slate-100 block">Ganso (T5)</span>
-                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Coles (T6)</span>
+                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Coles (T5)</span>
                 <span className="text-[10px] text-slate-500">Cultivo: Thetford</span>
               </div>
               <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800/80">
                 <span className="font-bold text-slate-100 block">Oveja (T6)</span>
-                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Patatas (T7)</span>
+                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Patatas (T6)</span>
                 <span className="text-[10px] text-slate-500">Cultivo: Martlock</span>
               </div>
               <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800/80">
                 <span className="font-bold text-slate-100 block">Cerdo (T7)</span>
-                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Maíz (T8)</span>
+                <span className="text-amber-400 text-[11px] block mt-0.5">➔ Maíz (T7)</span>
                 <span className="text-[10px] text-slate-500">Cultivo: Bridgewatch</span>
               </div>
               <div className="p-2.5 rounded-lg bg-slate-900 border border-slate-800/80">

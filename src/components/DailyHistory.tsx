@@ -283,6 +283,20 @@ export const DailyHistory: React.FC<Props> = ({
             <Beef size={12} /> Matanza
           </span>
         );
+      case 'distillate':
+        return (
+          <span className="flex items-center gap-1 text-[11px] font-semibold text-amber-300 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800/60">
+            Destilado
+          </span>
+        );
+      case 'special_ingredient':
+        return (
+          <span className="flex items-center gap-1 text-[11px] font-semibold text-purple-300 bg-purple-950/60 px-2 py-0.5 rounded border border-purple-800/60">
+            Ingrediente Especial
+          </span>
+        );
+      default:
+        return null;
     }
   };
 

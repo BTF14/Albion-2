@@ -1,4 +1,4 @@
-export type CategoryType = 'crop' | 'herb' | 'animal_produce' | 'animal_meat';
+export type CategoryType = 'crop' | 'herb' | 'animal_produce' | 'animal_meat' | 'distillate' | 'special_ingredient';
 
 export type AppTab =
   | 'logger'

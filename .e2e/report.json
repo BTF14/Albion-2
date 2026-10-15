@@ -1,7 +1,7 @@
 {
   "schemaVersion": "report-1",
   "run": {
-    "id": "01a13437-acd0-7186-99c0-f288c3cb459b",
+    "id": "01a13e83-2b6a-7cbe-acfb-4961ba40de6f",
     "specVersion": "0.1",
     "runner": {
       "name": "e2e",
@@ -9,8 +9,8 @@
     },
     "status": "passed",
     "exitCode": 0,
-    "startedAt": "2026-10-13T07:43:47.286Z",
-    "finishedAt": "2026-10-13T07:44:40.160Z",
+    "startedAt": "2026-10-15T07:42:34.559Z",
+    "finishedAt": "2026-10-15T07:43:42.967Z",
     "project": {
       "id": "albion-farm-economy-tracker",
       "configDigest": "75df380821604b84d8c43f4c5b7073be05cf426232b77d97e90b8280d1b7546d"
@@ -20,7 +20,7 @@
       "trustNoticeShown": false,
       "os": "linux 4.19.0-gvisor",
       "arch": "x64",
-      "runtime": "node v22.23.2"
+      "runtime": "node v22.23.3"
     },
     "targets": [
       {
@@ -77,14 +77,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-b5c8-7f17-82e2-64e619b956a5",
+            "id": "01a13e83-5015-7c31-9b3b-06e65856a912",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:43:48.680Z",
-            "durationMs": 2924,
+            "startedAt": "2026-10-15T07:42:35.541Z",
+            "durationMs": 4631,
             "artifacts": [
               {
-                "id": "01a13437-b5c8-7f17-82e2-64e619b956a5:artifact:0",
+                "id": "01a13e83-5015-7c31-9b3b-06e65856a912:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -92,22 +92,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Abre_20la_20aplicaci_C3_B3n_20y_20renderiza_20el_20t_C3_ADtulo_20ofi-7d81f698/default/attempt-0/trace/trace.zip",
-                "size": 111680,
-                "sha256": "9af9e96348955b9b9366c4c22b23d54f41118d368147dd98685cb595513386de"
+                "size": 114118,
+                "sha256": "7468ce739d361442e6d7fa7e871005c6f29467754ae0a1442c8413c09b3c4092"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13437-b5c8-7f17-82e2-64e619b956a5:0",
+                "id": "01a13e83-5015-7c31-9b3b-06e65856a912:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:48.868Z",
-                "durationMs": 2454,
+                "startedAt": "2026-10-15T07:42:36.193Z",
+                "durationMs": 3247,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -117,14 +117,14 @@
                 }
               },
               {
-                "id": "01a13437-b5c8-7f17-82e2-64e619b956a5:1",
+                "id": "01a13e83-5015-7c31-9b3b-06e65856a912:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(\"Albion Farm & Livestock\")",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:51.326Z",
-                "durationMs": 178,
+                "startedAt": "2026-10-15T07:42:39.443Z",
+                "durationMs": 317,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -160,14 +160,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-c136-794d-9747-4c6be565da9e",
+            "id": "01a13e83-6231-77f0-aea4-5f5f0d074a1e",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:43:51.606Z",
-            "durationMs": 3001,
+            "startedAt": "2026-10-15T07:42:40.177Z",
+            "durationMs": 4091,
             "artifacts": [
               {
-                "id": "01a13437-c136-794d-9747-4c6be565da9e:artifact:0",
+                "id": "01a13e83-6231-77f0-aea4-5f5f0d074a1e:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -175,22 +175,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Barra_20de_20navegaci_C3_B3n_20superior_20muestra_20las_20pesta_C3_B-7b211a21/default/attempt-0/trace/trace.zip",
-                "size": 254127,
-                "sha256": "c347f53d624b7797ed878e744161d8178812a0fa32ed5d0824cd22d9ea62dbf3"
+                "size": 473296,
+                "sha256": "c6fd11d7f022f7b63e4394595746a2cd47d4b0985d6251e5f2ce74ea76f1f1a8"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13437-c136-794d-9747-4c6be565da9e:0",
+                "id": "01a13e83-6231-77f0-aea4-5f5f0d074a1e:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:51.621Z",
-                "durationMs": 2565,
+                "startedAt": "2026-10-15T07:42:40.253Z",
+                "durationMs": 3189,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -200,14 +200,14 @@
                 }
               },
               {
-                "id": "01a13437-c136-794d-9747-4c6be565da9e:1",
+                "id": "01a13e83-6231-77f0-aea4-5f5f0d074a1e:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Registrar Cosecha/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:54.187Z",
-                "durationMs": 186,
+                "startedAt": "2026-10-15T07:42:43.444Z",
+                "durationMs": 329,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -217,14 +217,14 @@
                 }
               },
               {
-                "id": "01a13437-c136-794d-9747-4c6be565da9e:2",
+                "id": "01a13e83-6231-77f0-aea4-5f5f0d074a1e:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Cocina & Alquimia/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:54.374Z",
-                "durationMs": 58,
+                "startedAt": "2026-10-15T07:42:43.774Z",
+                "durationMs": 92,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -234,14 +234,14 @@
                 }
               },
               {
-                "id": "01a13437-c136-794d-9747-4c6be565da9e:3",
+                "id": "01a13e83-6231-77f0-aea4-5f5f0d074a1e:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Optimizador de Foco/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:54.433Z",
-                "durationMs": 31,
+                "startedAt": "2026-10-15T07:42:43.867Z",
+                "durationMs": 80,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -251,14 +251,14 @@
                 }
               },
               {
-                "id": "01a13437-c136-794d-9747-4c6be565da9e:4",
+                "id": "01a13e83-6231-77f0-aea4-5f5f0d074a1e:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:54.465Z",
-                "durationMs": 51,
+                "startedAt": "2026-10-15T07:42:43.947Z",
+                "durationMs": 112,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -294,14 +294,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-ccf1-7306-9980-6dde47bad531",
+            "id": "01a13e83-722d-7e44-8f75-fadf1e479f46",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:43:54.609Z",
-            "durationMs": 3634,
+            "startedAt": "2026-10-15T07:42:44.269Z",
+            "durationMs": 5080,
             "artifacts": [
               {
-                "id": "01a13437-ccf1-7306-9980-6dde47bad531:artifact:0",
+                "id": "01a13e83-722d-7e44-8f75-fadf1e479f46:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -309,22 +309,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Cambio_20a_20la_20pesta_C3_B1a_20de_20Cocina_20_26_20Alquimia_20y_20-f1fc236a/default/attempt-0/trace/trace.zip",
-                "size": 904340,
-                "sha256": "04ee4132dfa407ceeffc51e0001fe681f8413d60192879aaf281d45de8d2f9fe"
+                "size": 1127161,
+                "sha256": "e548aeac14df69bdb0acd8002b9ec606fb963881aca1ebc3fa199c0208339a1d"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13437-ccf1-7306-9980-6dde47bad531:0",
+                "id": "01a13e83-722d-7e44-8f75-fadf1e479f46:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:54.632Z",
-                "durationMs": 2403,
+                "startedAt": "2026-10-15T07:42:44.340Z",
+                "durationMs": 3004,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -334,14 +334,14 @@
                 }
               },
               {
-                "id": "01a13437-ccf1-7306-9980-6dde47bad531:1",
+                "id": "01a13e83-722d-7e44-8f75-fadf1e479f46:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Cocina & Alquimia/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:57.036Z",
-                "durationMs": 931,
+                "startedAt": "2026-10-15T07:42:47.345Z",
+                "durationMs": 1629,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -351,14 +351,14 @@
                 }
               },
               {
-                "id": "01a13437-ccf1-7306-9980-6dde47bad531:2",
+                "id": "01a13e83-722d-7e44-8f75-fadf1e479f46:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Valor Agregado: Cocina & Alquimia/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:57.968Z",
-                "durationMs": 67,
+                "startedAt": "2026-10-15T07:42:48.976Z",
+                "durationMs": 100,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -394,14 +394,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-db25-7b97-89e8-3367fa70c9b1",
+            "id": "01a13e83-8609-7f0a-a0e8-69c267411494",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:43:58.245Z",
-            "durationMs": 3793,
+            "startedAt": "2026-10-15T07:42:49.353Z",
+            "durationMs": 4789,
             "artifacts": [
               {
-                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:artifact:0",
+                "id": "01a13e83-8609-7f0a-a0e8-69c267411494:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -409,22 +409,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Navegaci_C3_B3n_20a_20Optimizador_20de_20Foco_20y_20Cosas_20por_20Ha-a314a38b/default/attempt-0/trace/trace.zip",
-                "size": 1150433,
-                "sha256": "9c40b13bb18346764d9baa4fe01cf561f28fb4c6a5b738071cd5b6fc98f71508"
+                "size": 1142031,
+                "sha256": "39201477270b07e0398af0f9223a2c03c4959fc59e7595e366e2c56712e821ac"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:0",
+                "id": "01a13e83-8609-7f0a-a0e8-69c267411494:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:43:58.266Z",
-                "durationMs": 2441,
+                "startedAt": "2026-10-15T07:42:49.366Z",
+                "durationMs": 2952,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -434,14 +434,14 @@
                 }
               },
               {
-                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:1",
+                "id": "01a13e83-8609-7f0a-a0e8-69c267411494:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Optimizador de Foco/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:00.708Z",
-                "durationMs": 508,
+                "startedAt": "2026-10-15T07:42:52.319Z",
+                "durationMs": 934,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -451,14 +451,14 @@
                 }
               },
               {
-                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:2",
+                "id": "01a13e83-8609-7f0a-a0e8-69c267411494:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Optimizador de Foco Diario/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:01.217Z",
-                "durationMs": 23,
+                "startedAt": "2026-10-15T07:42:53.254Z",
+                "durationMs": 20,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -468,14 +468,14 @@
                 }
               },
               {
-                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:3",
+                "id": "01a13e83-8609-7f0a-a0e8-69c267411494:3",
                 "index": 3,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:01.241Z",
-                "durationMs": 449,
+                "startedAt": "2026-10-15T07:42:53.275Z",
+                "durationMs": 501,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -485,14 +485,14 @@
                 }
               },
               {
-                "id": "01a13437-db25-7b97-89e8-3367fa70c9b1:4",
+                "id": "01a13e83-8609-7f0a-a0e8-69c267411494:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Lista de Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:01.690Z",
-                "durationMs": 135,
+                "startedAt": "2026-10-15T07:42:53.778Z",
+                "durationMs": 73,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -528,14 +528,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44",
+            "id": "01a13e83-98c1-7aae-8763-ee6c074b6e99",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:02.039Z",
-            "durationMs": 3366,
+            "startedAt": "2026-10-15T07:42:54.145Z",
+            "durationMs": 4012,
             "artifacts": [
               {
-                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:artifact:0",
+                "id": "01a13e83-98c1-7aae-8763-ee6c074b6e99:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -543,22 +543,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_app-navigation.e2e.ts__E2E_20UI_3A_20Navegaci_C3_B3n_20a_20Sets_20_26_20Re-Gear_20y_20verificaci_C3_B3n_2-045dc1fc/default/attempt-0/trace/trace.zip",
-                "size": 685753,
-                "sha256": "ba62cee032cd63a3d54962cd1ef2b4c6f2775db88718a9c58d72be5bc80ec90b"
+                "size": 834526,
+                "sha256": "8265ebf7e5e184563d952ff3ba31569002ab52a8c3b616687a9c93ed78c249c2"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:0",
+                "id": "01a13e83-98c1-7aae-8763-ee6c074b6e99:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:02.065Z",
-                "durationMs": 2483,
+                "startedAt": "2026-10-15T07:42:54.165Z",
+                "durationMs": 2677,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -568,14 +568,14 @@
                 }
               },
               {
-                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:1",
+                "id": "01a13e83-98c1-7aae-8763-ee6c074b6e99:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Sets & Re-Gear/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:04.548Z",
-                "durationMs": 212,
+                "startedAt": "2026-10-15T07:42:56.842Z",
+                "durationMs": 299,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -585,14 +585,14 @@
                 }
               },
               {
-                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:2",
+                "id": "01a13e83-98c1-7aae-8763-ee6c074b6e99:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Sets & Re-Gear/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:04.760Z",
-                "durationMs": 435,
+                "startedAt": "2026-10-15T07:42:57.142Z",
+                "durationMs": 605,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -602,14 +602,14 @@
                 }
               },
               {
-                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:3",
+                "id": "01a13e83-98c1-7aae-8763-ee6c074b6e99:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Calculadora de Sets, Re-Gear & Presupuesto de Bajas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:05.195Z",
-                "durationMs": 32,
+                "startedAt": "2026-10-15T07:42:57.748Z",
+                "durationMs": 24,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -619,14 +619,14 @@
                 }
               },
               {
-                "id": "01a13437-e9f7-74ee-95fc-a94d5d858a44:4",
+                "id": "01a13e83-98c1-7aae-8763-ee6c074b6e99:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Coste por Muerte/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:05.228Z",
-                "durationMs": 26,
+                "startedAt": "2026-10-15T07:42:57.773Z",
+                "durationMs": 188,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -662,14 +662,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f75a-7521-808d-9684a85f002b",
+            "id": "01a13e83-a8d1-7590-950f-ad86960c4da0",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.466Z",
-            "durationMs": 37,
+            "startedAt": "2026-10-15T07:42:58.257Z",
+            "durationMs": 33,
             "artifacts": [
               {
-                "id": "01a13437-f75a-7521-808d-9684a85f002b:artifact:0",
+                "id": "01a13e83-a8d1-7590-950f-ad86960c4da0:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -677,8 +677,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateCraftingEconomy_20respeta_20RRR_20oficial_20en_20Cae-37589e78/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "a31b843f69ccc52ac88e33a185d117f8a3b678ec03eaf42eb70728e2d21000a1"
+                "size": 55557,
+                "sha256": "52cb2e6b1a516c078539fce4fdaefa43360d35bf282dc899461ab762de9c34ac"
               }
             ],
             "secondaryErrors": [],
@@ -710,14 +710,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f77f-746b-9078-fcd37e0a919a",
+            "id": "01a13e83-a8f2-74e5-986b-d219dc14cbe4",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.503Z",
-            "durationMs": 43,
+            "startedAt": "2026-10-15T07:42:58.290Z",
+            "durationMs": 31,
             "artifacts": [
               {
-                "id": "01a13437-f77f-746b-9078-fcd37e0a919a:artifact:0",
+                "id": "01a13e83-a8f2-74e5-986b-d219dc14cbe4:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -725,8 +725,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateHarvestEconomy_20calcula_20de_20forma_20defensiva_20-d63fa055/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "daaa24efee232745989219b9e776c1cf6014479bf79e70df7c29368f2b96753d"
+                "size": 55557,
+                "sha256": "2985a1a2a7460fb672eedf7aef51134e1dfe319ba50cdc198afabb5c5fc946e3"
               }
             ],
             "secondaryErrors": [],
@@ -758,14 +758,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f7aa-733d-8e1b-4c6ac0815d69",
+            "id": "01a13e83-a911-75b3-a9db-0cbb92b83687",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.546Z",
-            "durationMs": 38,
+            "startedAt": "2026-10-15T07:42:58.321Z",
+            "durationMs": 31,
             "artifacts": [
               {
-                "id": "01a13437-f7aa-733d-8e1b-4c6ac0815d69:artifact:0",
+                "id": "01a13e83-a911-75b3-a9db-0cbb92b83687:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -773,8 +773,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateButcherEconomy_20calcula_20rendimiento_20base_2020_2-a771d7ed/default/attempt-0/trace/trace.zip",
-                "size": 55557,
-                "sha256": "8ea0a5ef21ffe9d8a6c80915fffcfa2ac5be6353e6be4a8bc8dbf4e85671e1b9"
+                "size": 55558,
+                "sha256": "fe6140f663928bed4aa0ee14ba01e80218fb2557a63987b63bf1ccf783538714"
               }
             ],
             "secondaryErrors": [],
@@ -806,14 +806,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f7d0-703d-899b-febb6ed3be25",
+            "id": "01a13e83-a930-7583-a9e1-5cae67dbcbf0",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.585Z",
-            "durationMs": 33,
+            "startedAt": "2026-10-15T07:42:58.353Z",
+            "durationMs": 30,
             "artifacts": [
               {
-                "id": "01a13437-f7d0-703d-899b-febb6ed3be25:artifact:0",
+                "id": "01a13e83-a930-7583-a9e1-5cae67dbcbf0:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -821,8 +821,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateRefiningEconomy_20calcula_20RRR_20de_2036.7_25_20sin-c28513c1/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "f72c0f1d5c58aef344f1177c0c46e2600519ef97a62b7d5cb2089a0138af4217"
+                "size": 55557,
+                "sha256": "7910f632153b4ec1d2f3508844c5761b3a254a326c4668db83222385e16f2576"
               }
             ],
             "secondaryErrors": [],
@@ -854,14 +854,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f7f3-70c0-88ce-365396414f80",
+            "id": "01a13e83-a950-7e8d-95ca-9ad8a12a4b3e",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.619Z",
-            "durationMs": 31,
+            "startedAt": "2026-10-15T07:42:58.384Z",
+            "durationMs": 24,
             "artifacts": [
               {
-                "id": "01a13437-f7f3-70c0-88ce-365396414f80:artifact:0",
+                "id": "01a13e83-a950-7e8d-95ca-9ad8a12a4b3e:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -869,8 +869,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateMountEconomy_20respeta_2010_20u._20alimento_2Fciclo_-b7f4c977/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "f33888db75cdb19578ab1eccc9a1207c53339e911c8d69d6aaf0adc3672040ea"
+                "size": 55557,
+                "sha256": "c1226d02df4fd4f456a1c129959b90fb7c73b2e12eeb49d572de8736bb08db1d"
               }
             ],
             "secondaryErrors": [],
@@ -902,14 +902,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f813-71fe-af1c-15223968cff3",
+            "id": "01a13e83-a969-7f77-941c-bc23d2b6b5cf",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.651Z",
-            "durationMs": 36,
+            "startedAt": "2026-10-15T07:42:58.409Z",
+            "durationMs": 29,
             "artifacts": [
               {
-                "id": "01a13437-f813-71fe-af1c-15223968cff3:artifact:0",
+                "id": "01a13e83-a969-7f77-941c-bc23d2b6b5cf:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -918,7 +918,7 @@
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateEquipmentCraftingEconomy_20valida_2024_20mats_20para-02546eb6/default/attempt-0/trace/trace.zip",
                 "size": 55557,
-                "sha256": "c409882cc6372ddef997cfc95a072caf7c9a298bf46260fd7c379066247e01e0"
+                "sha256": "cddc171d0e82d72552a3d576047adaab9ae6d55fab9d44a97c10f63cbdd578cd"
               }
             ],
             "secondaryErrors": [],
@@ -950,14 +950,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f837-7dd6-aba8-8d10327278d9",
+            "id": "01a13e83-a986-74ab-b4ec-921cb7cbb43e",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.687Z",
-            "durationMs": 28,
+            "startedAt": "2026-10-15T07:42:58.439Z",
+            "durationMs": 27,
             "artifacts": [
               {
-                "id": "01a13437-f837-7dd6-aba8-8d10327278d9:artifact:0",
+                "id": "01a13e83-a986-74ab-b4ec-921cb7cbb43e:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -965,8 +965,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateResourceTransmutation_20aplica_20costes_20oficiales_-4004061d/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "8779d0a9e233c98ca0994d1fd2c2e6b58dcc8114be23024bfd5e44e8843b5089"
+                "size": 55557,
+                "sha256": "0bbedb00826754cfb36983e7db6daf6f0d8f2b72ad76458253b2adb2a74d4b32"
               }
             ],
             "secondaryErrors": [],
@@ -998,14 +998,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f853-7414-a893-a9d378db1913",
+            "id": "01a13e83-a9a3-7986-86cf-85b375547a59",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.715Z",
+            "startedAt": "2026-10-15T07:42:58.467Z",
             "durationMs": 29,
             "artifacts": [
               {
-                "id": "01a13437-f853-7414-a893-a9d378db1913:artifact:0",
+                "id": "01a13e83-a9a3-7986-86cf-85b375547a59:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1013,8 +1013,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateGuildIslandEconomy_20calcula_20solares_20y_20amortiz-b69e0482/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "0ed7258f874286628c2589c406c9bfa1ddddc31f50bb914272205aa866128763"
+                "size": 55557,
+                "sha256": "c79d71b18934bf0b863a724eb45e245646bdb5c75b782d231f7f4c306e197b66"
               }
             ],
             "secondaryErrors": [],
@@ -1046,14 +1046,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f870-7d89-8241-54cb461f5a09",
+            "id": "01a13e83-a9c0-72d6-9bf2-3724a53e69a0",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.745Z",
-            "durationMs": 41,
+            "startedAt": "2026-10-15T07:42:58.496Z",
+            "durationMs": 25,
             "artifacts": [
               {
-                "id": "01a13437-f870-7d89-8241-54cb461f5a09:artifact:0",
+                "id": "01a13e83-a9c0-72d6-9bf2-3724a53e69a0:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1061,8 +1061,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateBlackMarketThreshold_20calcula_20con_20precisi_C3_B3-31aa4630/default/attempt-0/trace/trace.zip",
-                "size": 55557,
-                "sha256": "ddb0afd810350746f1f60f81e76af51846100c5afa56141f5866f1dd12e239a5"
+                "size": 55558,
+                "sha256": "6895f62d41cf7af944ae7714f80e3cfcf26a5cf159cd15e653ad7ac9252161c4"
               }
             ],
             "secondaryErrors": [],
@@ -1094,14 +1094,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f89a-769e-a557-fb48bb36172c",
+            "id": "01a13e83-a9d9-7aed-881f-b51509fa5c2a",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.786Z",
-            "durationMs": 36,
+            "startedAt": "2026-10-15T07:42:58.521Z",
+            "durationMs": 24,
             "artifacts": [
               {
-                "id": "01a13437-f89a-769e-a557-fb48bb36172c:artifact:0",
+                "id": "01a13e83-a9d9-7aed-881f-b51509fa5c2a:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1109,8 +1109,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateRedZoneTransport_20calcula_20supervivencia_20y_20Val-057031da/default/attempt-0/trace/trace.zip",
-                "size": 55557,
-                "sha256": "ac19c45a88260fefe101773186ee6d98400c33d2b32cca50134e8f79f178f768"
+                "size": 55558,
+                "sha256": "3ceb6a2377a9f1af182cf21193ea9f71e6a9388bb778338afdece192e7d6b5c2"
               }
             ],
             "secondaryErrors": [],
@@ -1142,14 +1142,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f8be-7d5a-9b20-03a8da0640bb",
+            "id": "01a13e83-a9f1-7b3f-a940-9d3c7e83cdac",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.822Z",
-            "durationMs": 32,
+            "startedAt": "2026-10-15T07:42:58.545Z",
+            "durationMs": 29,
             "artifacts": [
               {
-                "id": "01a13437-f8be-7d5a-9b20-03a8da0640bb:artifact:0",
+                "id": "01a13e83-a9f1-7b3f-a940-9d3c7e83cdac:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1157,8 +1157,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_economy-formulas.e2e.ts__E2E_20Formula_3A_20calculateFishingSaucesEconomy_20calcula_20rendimiento_20de_20-a7c6fad9/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "203a2c9a4a4732a32a3aedb86c3bd651c6383eb9ab9064fc7649ac8b46e688e7"
+                "size": 55558,
+                "sha256": "3d284b1e90c4cc130aae0fe08ecd1e4c3c6763f857840f5b4572c67fd40d7ebb"
               }
             ],
             "secondaryErrors": [],
@@ -1190,14 +1190,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f8ed-7817-bf9a-523dd16533fc",
+            "id": "01a13e83-aa19-7063-b8d7-8aebb129dd3a",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.869Z",
-            "durationMs": 34,
+            "startedAt": "2026-10-15T07:42:58.585Z",
+            "durationMs": 27,
             "artifacts": [
               {
-                "id": "01a13437-f8ed-7817-bf9a-523dd16533fc:artifact:0",
+                "id": "01a13e83-aa19-7063-b8d7-8aebb129dd3a:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1205,8 +1205,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Todos_20los_20ingredientes_20referenciados_20existen_20en_20ALBION-338b66e2/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "df9aa0f3a954157cb22adc3f74b97cf16895c515423b2887fb9d7443fd8b0faf"
+                "size": 55557,
+                "sha256": "940b393ffc36af9baa95260a374073f380dc984d7ba797b227bbb3ae8420b2f3"
               }
             ],
             "secondaryErrors": [],
@@ -1238,14 +1238,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f90f-7637-b9b4-6ea859064d90",
+            "id": "01a13e83-aa34-70c7-9b37-21e0e7bbd3a8",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.903Z",
-            "durationMs": 35,
+            "startedAt": "2026-10-15T07:42:58.612Z",
+            "durationMs": 27,
             "artifacts": [
               {
-                "id": "01a13437-f90f-7637-b9b4-6ea859064d90:artifact:0",
+                "id": "01a13e83-aa34-70c7-9b37-21e0e7bbd3a8:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1253,8 +1253,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Galletas_20de_20Huevo_20de_20Drag_C3_B3n_20T8_20cumplen_20la_20mec-7a509b2c/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "822469000265187fa68a9f6cbc1c0ad70ee92cf52e98288a3aa2a7b11b727719"
+                "size": 55557,
+                "sha256": "50b79d86642b644356d23dd31b61e543944e9ceb02b132053a36adbc20c14998"
               }
             ],
             "secondaryErrors": [],
@@ -1286,14 +1286,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f933-7150-9361-ca38614a7b0d",
+            "id": "01a13e83-aa4f-7c9d-a191-da3d8c502d86",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.939Z",
-            "durationMs": 33,
+            "startedAt": "2026-10-15T07:42:58.639Z",
+            "durationMs": 36,
             "artifacts": [
               {
-                "id": "01a13437-f933-7150-9361-ca38614a7b0d:artifact:0",
+                "id": "01a13e83-aa4f-7c9d-a191-da3d8c502d86:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1301,8 +1301,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Poci_C3_B3n_20de_20Guardia_20de_20Vida_20_2F_20Drag_C3_B3n_20T6_20-fc55573e/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "83cc2329d0d10597aef56d9e13898aaf3cb86d54f6e2542062e2e2061df42c5c"
+                "size": 55557,
+                "sha256": "6137382cb89635e469d797f6722026dc1b56ad19be4eec619d83a6b0d0c52b11"
               }
             ],
             "secondaryErrors": [],
@@ -1334,14 +1334,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f954-7aba-a6be-41a06bc577cf",
+            "id": "01a13e83-aa74-77f8-9d60-e94b464a602b",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:05.973Z",
-            "durationMs": 34,
+            "startedAt": "2026-10-15T07:42:58.676Z",
+            "durationMs": 24,
             "artifacts": [
               {
-                "id": "01a13437-f954-7aba-a6be-41a06bc577cf:artifact:0",
+                "id": "01a13e83-aa74-77f8-9d60-e94b464a602b:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1349,8 +1349,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Tortilla_20de_20Pez_20Ley_20T7_20utiliza_201_20pez_20aleta_20ley_2-83a3d932/default/attempt-0/trace/trace.zip",
-                "size": 55557,
-                "sha256": "c95c4124c5adb953fa8faadfc05c7da7bbbbf7124afc4063e2b6cd6909e595f6"
+                "size": 55558,
+                "sha256": "48b840d80e549800ecd2aafb615fadb20a85b96d91e3aa81420be949c2c66dfa"
               }
             ],
             "secondaryErrors": [],
@@ -1382,14 +1382,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f978-725b-96d5-b690551907e4",
+            "id": "01a13e83-aa8c-7e53-93a3-621211e57f02",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.008Z",
-            "durationMs": 49,
+            "startedAt": "2026-10-15T07:42:58.700Z",
+            "durationMs": 25,
             "artifacts": [
               {
-                "id": "01a13437-f978-725b-96d5-b690551907e4:artifact:0",
+                "id": "01a13e83-aa8c-7e53-93a3-621211e57f02:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1397,8 +1397,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Platos_20Avalonianos_20T7_20y_20T8_20tienen_20f_C3_B3rmulas_20e_20-5cca388e/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "3aa512b33fd5d77985153f7f5f5e2fd36531c19962ba86db0217fb7a2d9fcf45"
+                "size": 55557,
+                "sha256": "6ea57ed3a01d51e1f389e7e0ff23d17d397bd4510422347160ac26aed7e9822d"
               }
             ],
             "secondaryErrors": [],
@@ -1430,14 +1430,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f9a9-72ad-9ed3-4ce4a24e5f1e",
+            "id": "01a13e83-aaa5-73e6-8397-d38784588dff",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.057Z",
-            "durationMs": 29,
+            "startedAt": "2026-10-15T07:42:58.725Z",
+            "durationMs": 26,
             "artifacts": [
               {
-                "id": "01a13437-f9a9-72ad-9ed3-4ce4a24e5f1e:artifact:0",
+                "id": "01a13e83-aaa5-73e6-8397-d38784588dff:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1445,8 +1445,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Destilados_20de_20cultivos_20tienen_20relaci_C3_B3n_20estricta_201-e382974c/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "19c0b8558d6909a70b3e6b2b70c591107882d4f03abc0e065cddabeeb73ec94b"
+                "size": 55557,
+                "sha256": "3419ca6122f56268cde840299ad2de641f23c737c1c6bbc60333fb3555f520d1"
               }
             ],
             "secondaryErrors": [],
@@ -1478,14 +1478,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f9c6-7b02-a58d-3374359b1e78",
+            "id": "01a13e83-aac0-7c35-bebb-99458b6f4266",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.086Z",
-            "durationMs": 33,
+            "startedAt": "2026-10-15T07:42:58.752Z",
+            "durationMs": 24,
             "artifacts": [
               {
-                "id": "01a13437-f9c6-7b02-a58d-3374359b1e78:artifact:0",
+                "id": "01a13e83-aac0-7c35-bebb-99458b6f4266:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1493,8 +1493,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Pasteles_20_28Pies_29_20tienen_20sus_204_20ingredientes_20oficiale-dae28d01/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "56973e9348bde0a20c919eea30a4775bd614eca0fb0cb67ddf9798ea75ff16d8"
+                "size": 55557,
+                "sha256": "f7dac968b200219a82a253af123925f2920f76a0e0cd3971aa128e5298c2c471"
               }
             ],
             "secondaryErrors": [],
@@ -1526,14 +1526,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-f9e8-7071-8c01-9362b873b0ca",
+            "id": "01a13e83-aad8-706a-95c2-5270d61b9745",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.120Z",
-            "durationMs": 29,
+            "startedAt": "2026-10-15T07:42:58.776Z",
+            "durationMs": 23,
             "artifacts": [
               {
-                "id": "01a13437-f9e8-7071-8c01-9362b873b0ca:artifact:0",
+                "id": "01a13e83-aad8-706a-95c2-5270d61b9745:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1541,8 +1541,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20Guisos_20_28Stews_29_20usan_20Pan_20_28Trigo_29_20can_C3_B3nico_20-ae5934ab/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "3d166646d20134d98e2b9d7e3022fe4b0b94416ef4360a70e1a4c01b4570cee7"
+                "size": 55557,
+                "sha256": "f40bdf6896297b43f86012d3e26347d4811adf0a7f87e68706f88028652b91ad"
               }
             ],
             "secondaryErrors": [],
@@ -1574,14 +1574,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-fa05-7973-b6d8-49bff8e022fb",
+            "id": "01a13e83-aaef-71c0-89d5-1ea6df27eb71",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.149Z",
-            "durationMs": 32,
+            "startedAt": "2026-10-15T07:42:58.799Z",
+            "durationMs": 24,
             "artifacts": [
               {
-                "id": "01a13437-fa05-7973-b6d8-49bff8e022fb:artifact:0",
+                "id": "01a13e83-aaef-71c0-89d5-1ea6df27eb71:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1589,8 +1589,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_recipes-audit.e2e.ts__E2E_20Audit_3A_20_C3_81rbol_20completo_20de_2022_20Pociones_20de_20Alquimia_20inclu-61707a4c/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "1936858f57407a96ac5cb79d4a6f21c5b77a63d63121e2b3dfd5e172945abc41"
+                "size": 55557,
+                "sha256": "a155ba76488c9b04c867578d82d5c9c42c2848762a4f441ce325414f23b1b77e"
               }
             ],
             "secondaryErrors": [],
@@ -1622,14 +1622,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-fa36-7a4d-8e99-eec7993bc772",
+            "id": "01a13e83-ab14-7ba1-a346-5d1beac6e116",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.198Z",
-            "durationMs": 31,
+            "startedAt": "2026-10-15T07:42:58.836Z",
+            "durationMs": 22,
             "artifacts": [
               {
-                "id": "01a13437-fa36-7a4d-8e99-eec7993bc772:artifact:0",
+                "id": "01a13e83-ab14-7ba1-a346-5d1beac6e116:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1637,8 +1637,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20local-first_20storage_20guarda_20y_20recupera_20registros_2-40f0e409/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "d710857b866df6147c7b296785bb1baa3f17c3f6c4c6e3436b9c1286bbcc4259"
+                "size": 55557,
+                "sha256": "bcd8eaf2ef961319b760dd96e6166a86b516672f54ab1c3e5f7115e919504d7b"
               }
             ],
             "secondaryErrors": [],
@@ -1670,14 +1670,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-fa56-7676-aefa-8e3acc3508f8",
+            "id": "01a13e83-ab2a-7d2d-a18b-70f8f57ed4c6",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.230Z",
-            "durationMs": 41,
+            "startedAt": "2026-10-15T07:42:58.858Z",
+            "durationMs": 24,
             "artifacts": [
               {
-                "id": "01a13437-fa56-7676-aefa-8e3acc3508f8:artifact:0",
+                "id": "01a13e83-ab2a-7d2d-a18b-70f8f57ed4c6:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1685,8 +1685,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20updatePriceMemory_20persiste_20cotizaciones_20y_20respeta_2-311123a0/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "271b3558846e84c5397f1d614bca594d6a251424e85c2d9db42eb0274c48d39c"
+                "size": 55555,
+                "sha256": "17212eb0668b15e8b4794d9e15930f2c096effcfcb07dee065416f498fff02d5"
               }
             ],
             "secondaryErrors": [],
@@ -1718,14 +1718,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-fa80-7ca0-8583-c137eb09a4a3",
+            "id": "01a13e83-ab42-75e1-9581-9b47e3d5c6bf",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.272Z",
-            "durationMs": 35,
+            "startedAt": "2026-10-15T07:42:58.882Z",
+            "durationMs": 25,
             "artifacts": [
               {
-                "id": "01a13437-fa80-7ca0-8583-c137eb09a4a3:artifact:0",
+                "id": "01a13e83-ab42-75e1-9581-9b47e3d5c6bf:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1733,8 +1733,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20sanitizaci_C3_B3n_20estricta_20previene_20Prototype_20Pollu-567bbbec/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "9519ef647c2f013b205059a8e191f082cff429bd118f05276877739bd31ead84"
+                "size": 55558,
+                "sha256": "1b83d85b61b96eb1c545a1be02a2088d7f8d69714ce4881593f2635d3a329b1e"
               }
             ],
             "secondaryErrors": [],
@@ -1766,14 +1766,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-faa3-7444-a222-1cf29ba22920",
+            "id": "01a13e83-ab5c-7820-80e9-79faf6fb1525",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.307Z",
-            "durationMs": 29,
+            "startedAt": "2026-10-15T07:42:58.908Z",
+            "durationMs": 27,
             "artifacts": [
               {
-                "id": "01a13437-faa3-7444-a222-1cf29ba22920:artifact:0",
+                "id": "01a13e83-ab5c-7820-80e9-79faf6fb1525:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1781,8 +1781,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20lista_20de_20tareas_20_28Checklist_29_20persiste_20y_20mane-b289b9f2/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "1658e8adb03ab846ad51e91ae624dcaf691586884abe354b7c8296520b9080a3"
+                "size": 55557,
+                "sha256": "8f3aace5716664efab14631341d8c8102e48cf9dd529470e77989dd5b6b9bc9a"
               }
             ],
             "secondaryErrors": [],
@@ -1814,14 +1814,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-fac1-7237-a60a-4cc78630ac9e",
+            "id": "01a13e83-ab77-70f1-9218-eefcfaf1b650",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.337Z",
-            "durationMs": 31,
+            "startedAt": "2026-10-15T07:42:58.935Z",
+            "durationMs": 22,
             "artifacts": [
               {
-                "id": "01a13437-fac1-7237-a60a-4cc78630ac9e:artifact:0",
+                "id": "01a13e83-ab77-70f1-9218-eefcfaf1b650:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1829,8 +1829,8 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20perfiles_20de_20personajes_20_28Alts_29_20y_20reloj_20de_20-39afa444/default/attempt-0/trace/trace.zip",
-                "size": 55556,
-                "sha256": "5f715b14fd74a08b9176738346e749db00f22b409371d94cc05fa7978721c91a"
+                "size": 55557,
+                "sha256": "f18cb1d354bd4d2226110f03a0fa4b5ab353a993a467bb065dab0635c01a7adc"
               }
             ],
             "secondaryErrors": [],
@@ -1862,14 +1862,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-fae0-7d0a-bb3d-52c69378f823",
+            "id": "01a13e83-ab8d-7545-b53e-10868ab9e01c",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.369Z",
-            "durationMs": 37,
+            "startedAt": "2026-10-15T07:42:58.957Z",
+            "durationMs": 23,
             "artifacts": [
               {
-                "id": "01a13437-fae0-7d0a-bb3d-52c69378f823:artifact:0",
+                "id": "01a13e83-ab8d-7545-b53e-10868ab9e01c:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1878,7 +1878,7 @@
                 },
                 "path": "web-local/tests_storage-and-backup.e2e.ts__E2E_20Storage_3A_20respaldo_20oficial_20v2_20incluye_20y_20restaura_20configur-2364243c/default/attempt-0/trace/trace.zip",
                 "size": 55557,
-                "sha256": "a05c02468c39dc63d765da7add34692aaf513750d3bebafd70866340cde69295"
+                "sha256": "129bd3f0731ba8ead382540a54e996afa1b24b503202441f258533026d6a9d03"
               }
             ],
             "secondaryErrors": [],
@@ -1910,14 +1910,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13437-fb10-7a67-8361-1671b20838c9",
+            "id": "01a13e83-abab-798d-a77e-7bfee5cca51c",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:06.416Z",
-            "durationMs": 4437,
+            "startedAt": "2026-10-15T07:42:58.987Z",
+            "durationMs": 5097,
             "artifacts": [
               {
-                "id": "01a13437-fb10-7a67-8361-1671b20838c9:artifact:0",
+                "id": "01a13e83-abab-798d-a77e-7bfee5cca51c:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -1925,22 +1925,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Apertura_20y_20cierre_20de_20la_20Paleta_20de_20Comandos_20_28-5296faad/default/attempt-0/trace/trace.zip",
-                "size": 844239,
-                "sha256": "0ad34a57d066b045e1326045d9c0bbb48d95d868bb87dedcec92a478a6a5c8f4"
+                "size": 1076513,
+                "sha256": "16449f96397087d376bdb3e559aa308a7ee4387eb664e12e57f3014f79874f3c"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13437-fb10-7a67-8361-1671b20838c9:0",
+                "id": "01a13e83-abab-798d-a77e-7bfee5cca51c:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:06.429Z",
-                "durationMs": 2429,
+                "startedAt": "2026-10-15T07:42:58.996Z",
+                "durationMs": 2639,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1950,14 +1950,14 @@
                 }
               },
               {
-                "id": "01a13437-fb10-7a67-8361-1671b20838c9:1",
+                "id": "01a13e83-abab-798d-a77e-7bfee5cca51c:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Buscar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:08.859Z",
-                "durationMs": 204,
+                "startedAt": "2026-10-15T07:43:01.635Z",
+                "durationMs": 224,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1967,14 +1967,14 @@
                 }
               },
               {
-                "id": "01a13437-fb10-7a67-8361-1671b20838c9:2",
+                "id": "01a13e83-abab-798d-a77e-7bfee5cca51c:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Buscar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:09.064Z",
-                "durationMs": 428,
+                "startedAt": "2026-10-15T07:43:01.860Z",
+                "durationMs": 685,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -1984,14 +1984,14 @@
                 }
               },
               {
-                "id": "01a13437-fb10-7a67-8361-1671b20838c9:3",
+                "id": "01a13e83-abab-798d-a77e-7bfee5cca51c:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"textbox\", name: /Buscar módulo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:09.492Z",
-                "durationMs": 39,
+                "startedAt": "2026-10-15T07:43:02.546Z",
+                "durationMs": 32,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2001,14 +2001,14 @@
                 }
               },
               {
-                "id": "01a13437-fb10-7a67-8361-1671b20838c9:4",
+                "id": "01a13e83-abab-798d-a77e-7bfee5cca51c:4",
                 "index": 4,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: /Buscar módulo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:09.533Z",
-                "durationMs": 77,
+                "startedAt": "2026-10-15T07:43:02.578Z",
+                "durationMs": 291,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2018,14 +2018,14 @@
                 }
               },
               {
-                "id": "01a13437-fb10-7a67-8361-1671b20838c9:5",
+                "id": "01a13e83-abab-798d-a77e-7bfee5cca51c:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Calculadora de Valor Agregado/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:09.610Z",
-                "durationMs": 29,
+                "startedAt": "2026-10-15T07:43:02.869Z",
+                "durationMs": 71,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2035,14 +2035,14 @@
                 }
               },
               {
-                "id": "01a13437-fb10-7a67-8361-1671b20838c9:6",
+                "id": "01a13e83-abab-798d-a77e-7bfee5cca51c:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Calculadora de Valor Agregado/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:09.639Z",
-                "durationMs": 968,
+                "startedAt": "2026-10-15T07:43:02.941Z",
+                "durationMs": 728,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2052,14 +2052,14 @@
                 }
               },
               {
-                "id": "01a13437-fb10-7a67-8361-1671b20838c9:7",
+                "id": "01a13e83-abab-798d-a77e-7bfee5cca51c:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Valor Agregado: Cocina & Alquimia/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:10.608Z",
-                "durationMs": 31,
+                "startedAt": "2026-10-15T07:43:03.669Z",
+                "durationMs": 210,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2095,14 +2095,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372",
+            "id": "01a13e83-bf95-76fd-8df2-8bc399853169",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:10.853Z",
-            "durationMs": 3680,
+            "startedAt": "2026-10-15T07:43:04.085Z",
+            "durationMs": 4975,
             "artifacts": [
               {
-                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:artifact:0",
+                "id": "01a13e83-bf95-76fd-8df2-8bc399853169:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -2110,22 +2110,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Apertura_20y_20controles_20del_20Modal_20de_20Respaldo_20de_20-87254c1e/default/attempt-0/trace/trace.zip",
-                "size": 752583,
-                "sha256": "816394c5cf4b38a2c343117fdcdb686fae28721ffcc237b12157a1d4e9e02d2d"
+                "size": 1044245,
+                "sha256": "ca5a45bdde8bdbad998387a7496285c0cc2e53a645b30d76581be335dd926804"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:0",
+                "id": "01a13e83-bf95-76fd-8df2-8bc399853169:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:10.865Z",
-                "durationMs": 2499,
+                "startedAt": "2026-10-15T07:43:04.160Z",
+                "durationMs": 2990,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2135,14 +2135,14 @@
                 }
               },
               {
-                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:1",
+                "id": "01a13e83-bf95-76fd-8df2-8bc399853169:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Respaldo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:13.365Z",
-                "durationMs": 188,
+                "startedAt": "2026-10-15T07:43:07.151Z",
+                "durationMs": 313,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2152,14 +2152,14 @@
                 }
               },
               {
-                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:2",
+                "id": "01a13e83-bf95-76fd-8df2-8bc399853169:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Respaldo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:13.554Z",
-                "durationMs": 389,
+                "startedAt": "2026-10-15T07:43:07.465Z",
+                "durationMs": 604,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2169,14 +2169,14 @@
                 }
               },
               {
-                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:3",
+                "id": "01a13e83-bf95-76fd-8df2-8bc399853169:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Respaldo Completo de Datos/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:13.944Z",
-                "durationMs": 23,
+                "startedAt": "2026-10-15T07:43:08.070Z",
+                "durationMs": 89,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2186,14 +2186,14 @@
                 }
               },
               {
-                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:4",
+                "id": "01a13e83-bf95-76fd-8df2-8bc399853169:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Descargar Archivo de Respaldo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:13.968Z",
-                "durationMs": 52,
+                "startedAt": "2026-10-15T07:43:08.159Z",
+                "durationMs": 215,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2203,14 +2203,14 @@
                 }
               },
               {
-                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:5",
+                "id": "01a13e83-bf95-76fd-8df2-8bc399853169:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Restaurar Copia de Seguridad/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:14.021Z",
-                "durationMs": 20,
+                "startedAt": "2026-10-15T07:43:08.374Z",
+                "durationMs": 65,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2220,14 +2220,14 @@
                 }
               },
               {
-                "id": "01a13438-0c65-786d-ad9c-55d5fc7ec372:6",
+                "id": "01a13e83-bf95-76fd-8df2-8bc399853169:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Cerrar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:14.041Z",
-                "durationMs": 354,
+                "startedAt": "2026-10-15T07:43:08.440Z",
+                "durationMs": 321,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2263,14 +2263,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13438-1ac6-7305-a984-9d6471f2601b",
+            "id": "01a13e83-d304-79ca-934d-475affa4be23",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:14.537Z",
-            "durationMs": 3973,
+            "startedAt": "2026-10-15T07:43:09.060Z",
+            "durationMs": 5495,
             "artifacts": [
               {
-                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:artifact:0",
+                "id": "01a13e83-d304-79ca-934d-475affa4be23:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -2278,22 +2278,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Navegaci_C3_B3n_20por_20categor_C3_ADas_20de_20cultivo_20en_20-10e7a343/default/attempt-0/trace/trace.zip",
-                "size": 1141007,
-                "sha256": "c6330378ff6f19aa20bf45576ef05bec52f475683df1b9c683d594d60722b143"
+                "size": 1577362,
+                "sha256": "fd2dbd30a49552b965ff93f5783a3b70c6d3d24650541bfdb24ac7effe09fb0b"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:0",
+                "id": "01a13e83-d304-79ca-934d-475affa4be23:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:14.554Z",
-                "durationMs": 2591,
+                "startedAt": "2026-10-15T07:43:09.072Z",
+                "durationMs": 3054,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2303,14 +2303,14 @@
                 }
               },
               {
-                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:1",
+                "id": "01a13e83-d304-79ca-934d-475affa4be23:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Cultivos \\(Vegetales\\)/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:17.146Z",
-                "durationMs": 189,
+                "startedAt": "2026-10-15T07:43:12.127Z",
+                "durationMs": 314,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2320,14 +2320,14 @@
                 }
               },
               {
-                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:2",
+                "id": "01a13e83-d304-79ca-934d-475affa4be23:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Huerto de Hierbas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:17.335Z",
-                "durationMs": 29,
+                "startedAt": "2026-10-15T07:43:12.452Z",
+                "durationMs": 93,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2337,14 +2337,14 @@
                 }
               },
               {
-                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:3",
+                "id": "01a13e83-d304-79ca-934d-475affa4be23:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Huevos & Leche/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:17.364Z",
-                "durationMs": 50,
+                "startedAt": "2026-10-15T07:43:12.546Z",
+                "durationMs": 115,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2354,14 +2354,14 @@
                 }
               },
               {
-                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:4",
+                "id": "01a13e83-d304-79ca-934d-475affa4be23:4",
                 "index": 4,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Huerto de Hierbas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:17.414Z",
-                "durationMs": 456,
+                "startedAt": "2026-10-15T07:43:12.663Z",
+                "durationMs": 786,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2371,14 +2371,14 @@
                 }
               },
               {
-                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:5",
+                "id": "01a13e83-d304-79ca-934d-475affa4be23:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Agárico arcano/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:17.870Z",
-                "durationMs": 61,
+                "startedAt": "2026-10-15T07:43:13.450Z",
+                "durationMs": 27,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2388,14 +2388,14 @@
                 }
               },
               {
-                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:6",
+                "id": "01a13e83-d304-79ca-934d-475affa4be23:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Huevos & Leche/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:17.931Z",
-                "durationMs": 353,
+                "startedAt": "2026-10-15T07:43:13.477Z",
+                "durationMs": 477,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2405,14 +2405,14 @@
                 }
               },
               {
-                "id": "01a13438-1ac6-7305-a984-9d6471f2601b:7",
+                "id": "01a13e83-d304-79ca-934d-475affa4be23:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Gallina/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:18.284Z",
-                "durationMs": 51,
+                "startedAt": "2026-10-15T07:43:13.956Z",
+                "durationMs": 116,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2448,14 +2448,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79",
+            "id": "01a13e83-e87b-7d9a-a28f-6ba889506fcf",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:18.511Z",
-            "durationMs": 3243,
+            "startedAt": "2026-10-15T07:43:14.556Z",
+            "durationMs": 4706,
             "artifacts": [
               {
-                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:artifact:0",
+                "id": "01a13e83-e87b-7d9a-a28f-6ba889506fcf:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -2463,22 +2463,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Navegaci_C3_B3n_20a_20Cosas_20por_20Hacer_20y_20Rutinas_20Diar-93b5840d/default/attempt-0/trace/trace.zip",
-                "size": 616362,
-                "sha256": "c31a845f77098d0d231ab6f239b61369bb13def7e5c6aa6936dc8dac6200c5e0"
+                "size": 1050116,
+                "sha256": "38b10fc46371a3c0ea40ed1341a2c76663054504fcb750a96c767ed62a860c25"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:0",
+                "id": "01a13e83-e87b-7d9a-a28f-6ba889506fcf:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:18.527Z",
-                "durationMs": 2324,
+                "startedAt": "2026-10-15T07:43:14.576Z",
+                "durationMs": 3055,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2488,14 +2488,14 @@
                 }
               },
               {
-                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:1",
+                "id": "01a13e83-e87b-7d9a-a28f-6ba889506fcf:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:20.851Z",
-                "durationMs": 561,
+                "startedAt": "2026-10-15T07:43:17.632Z",
+                "durationMs": 1135,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2505,14 +2505,14 @@
                 }
               },
               {
-                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:2",
+                "id": "01a13e83-e87b-7d9a-a28f-6ba889506fcf:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Lista de Cosas por Hacer/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:21.412Z",
-                "durationMs": 24,
+                "startedAt": "2026-10-15T07:43:18.767Z",
+                "durationMs": 78,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2522,14 +2522,14 @@
                 }
               },
               {
-                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:3",
+                "id": "01a13e83-e87b-7d9a-a28f-6ba889506fcf:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Sincronizar Islas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:21.436Z",
-                "durationMs": 29,
+                "startedAt": "2026-10-15T07:43:18.845Z",
+                "durationMs": 43,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2539,14 +2539,14 @@
                 }
               },
               {
-                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:4",
+                "id": "01a13e83-e87b-7d9a-a28f-6ba889506fcf:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Plantillas Albion/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:21.466Z",
-                "durationMs": 60,
+                "startedAt": "2026-10-15T07:43:18.889Z",
+                "durationMs": 95,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2556,14 +2556,14 @@
                 }
               },
               {
-                "id": "01a13438-2a4f-7f3c-bdec-7f1813fb5b79:5",
+                "id": "01a13e83-e87b-7d9a-a28f-6ba889506fcf:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Agregar Tarea o Isla/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:21.527Z",
-                "durationMs": 22,
+                "startedAt": "2026-10-15T07:43:18.984Z",
+                "durationMs": 68,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2599,14 +2599,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7",
+            "id": "01a13e83-fade-7767-8390-b962fea219ba",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:21.755Z",
-            "durationMs": 4265,
+            "startedAt": "2026-10-15T07:43:19.262Z",
+            "durationMs": 5302,
             "artifacts": [
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:artifact:0",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -2614,22 +2614,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Pesta_C3_B1a_20de_20Pesca_20_26_20Salsas_20tiene_20bot_C3_B3n_-4e5bfa9d/default/attempt-0/trace/trace.zip",
-                "size": 1714744,
-                "sha256": "5253592cc1667a2efe4615f0cbce469616e0f77d5710754dfc877537a7d49e36"
+                "size": 1954892,
+                "sha256": "893ebbde7ad9830cd82c51a981738aa3bd3826564889e674095acad092195245"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:0",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:21.777Z",
-                "durationMs": 2467,
+                "startedAt": "2026-10-15T07:43:19.282Z",
+                "durationMs": 2688,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2639,14 +2639,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:1",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Pesca & Salsas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:24.246Z",
-                "durationMs": 179,
+                "startedAt": "2026-10-15T07:43:21.971Z",
+                "durationMs": 310,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2656,14 +2656,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:2",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Pesca & Salsas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:24.425Z",
-                "durationMs": 345,
+                "startedAt": "2026-10-15T07:43:22.282Z",
+                "durationMs": 666,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2673,14 +2673,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:3",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Taller de Pesca, Fileteado y Salsas de Comida/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:24.771Z",
-                "durationMs": 44,
+                "startedAt": "2026-10-15T07:43:22.948Z",
+                "durationMs": 15,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2690,14 +2690,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:4",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Calcular/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:24.816Z",
-                "durationMs": 21,
+                "startedAt": "2026-10-15T07:43:22.964Z",
+                "durationMs": 106,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2707,14 +2707,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:5",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Calcular Arbitraje/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:24.838Z",
-                "durationMs": 88,
+                "startedAt": "2026-10-15T07:43:23.070Z",
+                "durationMs": 80,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2724,14 +2724,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:6",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Calcular Arbitraje/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:24.927Z",
-                "durationMs": 287,
+                "startedAt": "2026-10-15T07:43:23.151Z",
+                "durationMs": 400,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2741,14 +2741,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:7",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Veredicto del Analizador/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:25.214Z",
-                "durationMs": 26,
+                "startedAt": "2026-10-15T07:43:23.551Z",
+                "durationMs": 28,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2758,14 +2758,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:8",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:8",
                 "index": 8,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Venta Cruda Entera/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:25.241Z",
-                "durationMs": 110,
+                "startedAt": "2026-10-15T07:43:23.580Z",
+                "durationMs": 106,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2775,14 +2775,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:9",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:9",
                 "index": 9,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Filetear Picado/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:25.351Z",
-                "durationMs": 54,
+                "startedAt": "2026-10-15T07:43:23.744Z",
+                "durationMs": 22,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2792,14 +2792,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:10",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:10",
                 "index": 10,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Análisis Detallado por Receta de Salsa de Cocina/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:25.406Z",
-                "durationMs": 60,
+                "startedAt": "2026-10-15T07:43:23.766Z",
+                "durationMs": 17,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2809,14 +2809,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:11",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:11",
                 "index": 11,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:25.467Z",
-                "durationMs": 57,
+                "startedAt": "2026-10-15T07:43:23.783Z",
+                "durationMs": 74,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2826,14 +2826,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:12",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:12",
                 "index": 12,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:25.524Z",
-                "durationMs": 152,
+                "startedAt": "2026-10-15T07:43:23.858Z",
+                "durationMs": 312,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2843,14 +2843,14 @@
                 }
               },
               {
-                "id": "01a13438-36fa-7a48-b1fe-43aef203fdf7:13",
+                "id": "01a13e83-fade-7767-8390-b962fea219ba:13",
                 "index": 13,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Calcular/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:25.676Z",
-                "durationMs": 36,
+                "startedAt": "2026-10-15T07:43:24.170Z",
+                "durationMs": 75,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2886,14 +2886,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13438-47a5-77c9-8069-45d449ee24e8",
+            "id": "01a13e84-0f99-72ff-a684-12e4f8738bda",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:26.021Z",
-            "durationMs": 5990,
+            "startedAt": "2026-10-15T07:43:24.570Z",
+            "durationMs": 8570,
             "artifacts": [
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:artifact:0",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -2901,22 +2901,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Optimizador_20de_20Foco_20ciclo_20oficial_20con_20bot_C3_B3n_2-35a48268/default/attempt-0/trace/trace.zip",
-                "size": 3549183,
-                "sha256": "36885ba19ad1788d2bd0e18758d394d34a0d9572608ad587cbf5fee6105d7ffc"
+                "size": 3661656,
+                "sha256": "584280a294f4296112e911d5913c2df29951a69704add7326b165a58ce6ec5fa"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:0",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:26.038Z",
-                "durationMs": 2476,
+                "startedAt": "2026-10-15T07:43:24.586Z",
+                "durationMs": 3790,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2926,14 +2926,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:1",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Optimizador de Foco/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:28.514Z",
-                "durationMs": 200,
+                "startedAt": "2026-10-15T07:43:28.377Z",
+                "durationMs": 472,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2943,14 +2943,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:2",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Optimizador de Foco/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:28.714Z",
-                "durationMs": 334,
+                "startedAt": "2026-10-15T07:43:28.849Z",
+                "durationMs": 853,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2960,14 +2960,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:3",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Optimizador de Foco Diario/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:29.048Z",
-                "durationMs": 17,
+                "startedAt": "2026-10-15T07:43:29.704Z",
+                "durationMs": 53,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2977,14 +2977,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:4",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Optimizar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:29.065Z",
-                "durationMs": 48,
+                "startedAt": "2026-10-15T07:43:29.758Z",
+                "durationMs": 29,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -2994,14 +2994,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:5",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Optimizar Foco Diario/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:29.113Z",
-                "durationMs": 17,
+                "startedAt": "2026-10-15T07:43:29.787Z",
+                "durationMs": 74,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3011,14 +3011,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:6",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Optimizar Foco Diario/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:29.130Z",
-                "durationMs": 1335,
+                "startedAt": "2026-10-15T07:43:29.861Z",
+                "durationMs": 1293,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3028,14 +3028,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:7",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Opción Más Rentable Hoy/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:30.465Z",
-                "durationMs": 462,
+                "startedAt": "2026-10-15T07:43:31.154Z",
+                "durationMs": 107,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3045,14 +3045,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:8",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:8",
                 "index": 8,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Ranking de Foco Calculado/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:30.928Z",
-                "durationMs": 78,
+                "startedAt": "2026-10-15T07:43:31.262Z",
+                "durationMs": 89,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3062,14 +3062,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:9",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:9",
                 "index": 9,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:31.006Z",
-                "durationMs": 110,
+                "startedAt": "2026-10-15T07:43:31.352Z",
+                "durationMs": 604,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3079,14 +3079,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:10",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:10",
                 "index": 10,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:31.117Z",
-                "durationMs": 408,
+                "startedAt": "2026-10-15T07:43:31.956Z",
+                "durationMs": 425,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3096,14 +3096,14 @@
                 }
               },
               {
-                "id": "01a13438-47a5-77c9-8069-45d449ee24e8:11",
+                "id": "01a13e84-0f99-72ff-a684-12e4f8738bda:11",
                 "index": 11,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Optimizar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:31.525Z",
-                "durationMs": 83,
+                "startedAt": "2026-10-15T07:43:32.381Z",
+                "durationMs": 89,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3139,14 +3139,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13438-5f0d-7e40-b461-7238104d727b",
+            "id": "01a13e84-3114-7599-9b3f-8178242bf739",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:32.013Z",
-            "durationMs": 4061,
+            "startedAt": "2026-10-15T07:43:33.140Z",
+            "durationMs": 4937,
             "artifacts": [
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:artifact:0",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -3154,22 +3154,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Metas_20Financieras_20y_20Presupuesto_20de_20Siembra_20con_20b-d1abdeb9/default/attempt-0/trace/trace.zip",
-                "size": 1522439,
-                "sha256": "e1fa852142cd89ef273a2050d23d5fab5cb98648d5695428ead265eaebfc0dfc"
+                "size": 1564043,
+                "sha256": "060be69d13b42ad9bd6ed95d35900d09e44dbe00a21cdb461d66fab77556d947"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:0",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:32.038Z",
-                "durationMs": 2388,
+                "startedAt": "2026-10-15T07:43:33.154Z",
+                "durationMs": 2896,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3179,14 +3179,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:1",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Metas & Presupuesto/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:34.426Z",
-                "durationMs": 198,
+                "startedAt": "2026-10-15T07:43:36.051Z",
+                "durationMs": 306,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3196,14 +3196,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:2",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Metas & Presupuesto/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:34.624Z",
-                "durationMs": 338,
+                "startedAt": "2026-10-15T07:43:36.358Z",
+                "durationMs": 515,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3213,14 +3213,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:3",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Metas Financieras & Presupuesto de Siembra/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:34.962Z",
-                "durationMs": 16,
+                "startedAt": "2026-10-15T07:43:36.873Z",
+                "durationMs": 74,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3230,14 +3230,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:4",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Proyectar tus Metas Financieras/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:34.979Z",
-                "durationMs": 36,
+                "startedAt": "2026-10-15T07:43:36.947Z",
+                "durationMs": 15,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3247,14 +3247,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:5",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Evaluar Metas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:35.015Z",
-                "durationMs": 124,
+                "startedAt": "2026-10-15T07:43:36.963Z",
+                "durationMs": 17,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3264,14 +3264,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:6",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:6",
                 "index": 6,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Evaluar Metas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:35.140Z",
-                "durationMs": 290,
+                "startedAt": "2026-10-15T07:43:36.980Z",
+                "durationMs": 389,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3281,14 +3281,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:7",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Progreso de Metas & Hitos/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:35.430Z",
-                "durationMs": 99,
+                "startedAt": "2026-10-15T07:43:37.370Z",
+                "durationMs": 78,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3298,14 +3298,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:8",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:8",
                 "index": 8,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Presupuesto de Siembra Masiva & Capital de Trabajo/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:35.531Z",
-                "durationMs": 23,
+                "startedAt": "2026-10-15T07:43:37.448Z",
+                "durationMs": 16,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3315,14 +3315,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:9",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:9",
                 "index": 9,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:35.554Z",
-                "durationMs": 53,
+                "startedAt": "2026-10-15T07:43:37.466Z",
+                "durationMs": 15,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3332,14 +3332,14 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:10",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:10",
                 "index": 10,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:35.607Z",
-                "durationMs": 213,
+                "startedAt": "2026-10-15T07:43:37.481Z",
+                "durationMs": 281,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3349,13 +3349,13 @@
                 }
               },
               {
-                "id": "01a13438-5f0d-7e40-b461-7238104d727b:11",
+                "id": "01a13e84-3114-7599-9b3f-8178242bf739:11",
                 "index": 11,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Proyectar tus Metas Financieras/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:35.820Z",
+                "startedAt": "2026-10-15T07:43:37.763Z",
                 "durationMs": 15,
                 "events": [],
                 "artifacts": [],
@@ -3392,14 +3392,14 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a13438-6eeb-7821-8f3b-05e73c02931a",
+            "id": "01a13e84-445f-7676-966d-deb7efbf9f89",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-10-13T07:44:36.075Z",
-            "durationMs": 3998,
+            "startedAt": "2026-10-15T07:43:38.079Z",
+            "durationMs": 4772,
             "artifacts": [
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:artifact:0",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:artifact:0",
                 "kind": "trace",
                 "mediaType": "application/zip",
                 "redaction": "not-required",
@@ -3407,22 +3407,22 @@
                   "kind": "attempt"
                 },
                 "path": "web-local/tests_user-workflows.e2e.ts__E2E_20Workflow_3A_20Sets_2C_20Re-Gear_20y_20Presupuesto_20de_20Bajas_20PvP_20con_2-e343b7de/default/attempt-0/trace/trace.zip",
-                "size": 1489078,
-                "sha256": "dea3a3b2678f9d8129bd3b396efc2d7aba55d1446d7a0c1d8bd6719035b90806"
+                "size": 1611004,
+                "sha256": "f86ef1f361a0e379d286be3fea748de986874fd43706a3abce0d285fd2e4adcf"
               }
             ],
             "secondaryErrors": [],
             "cleanup": "complete",
             "steps": [
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:0",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:36.110Z",
-                "durationMs": 2375,
+                "startedAt": "2026-10-15T07:43:38.153Z",
+                "durationMs": 2589,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3432,14 +3432,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:1",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Sets & Re-Gear/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:38.485Z",
-                "durationMs": 169,
+                "startedAt": "2026-10-15T07:43:40.743Z",
+                "durationMs": 295,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3449,14 +3449,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:2",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Sets & Re-Gear/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:38.655Z",
-                "durationMs": 450,
+                "startedAt": "2026-10-15T07:43:41.038Z",
+                "durationMs": 601,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3466,14 +3466,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:3",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: /Calculadora de Sets, Re-Gear & Presupuesto de Bajas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:39.105Z",
-                "durationMs": 21,
+                "startedAt": "2026-10-15T07:43:41.639Z",
+                "durationMs": 27,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3483,14 +3483,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:4",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:39.126Z",
-                "durationMs": 24,
+                "startedAt": "2026-10-15T07:43:41.668Z",
+                "durationMs": 83,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3500,14 +3500,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:5",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:5",
                 "index": 5,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Limpiar/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:39.150Z",
-                "durationMs": 268,
+                "startedAt": "2026-10-15T07:43:41.751Z",
+                "durationMs": 301,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3517,14 +3517,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:6",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:6",
                 "index": 6,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Listo para Calcular/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:39.418Z",
-                "durationMs": 21,
+                "startedAt": "2026-10-15T07:43:42.053Z",
+                "durationMs": 24,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3534,14 +3534,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:7",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Calcular Presupuesto/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:39.440Z",
-                "durationMs": 20,
+                "startedAt": "2026-10-15T07:43:42.078Z",
+                "durationMs": 93,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3551,14 +3551,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:8",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:8",
                 "index": 8,
                 "kind": "locator",
                 "api": "locator.click",
                 "label": "getByRole(\"button\", name: /Dar Resultado \\/ Calcular Presupuesto/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:39.461Z",
-                "durationMs": 301,
+                "startedAt": "2026-10-15T07:43:42.171Z",
+                "durationMs": 269,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3568,14 +3568,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:9",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:9",
                 "index": 9,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Presupuesto de Bajas Calculado/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:39.762Z",
-                "durationMs": 53,
+                "startedAt": "2026-10-15T07:43:42.441Z",
+                "durationMs": 16,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3585,14 +3585,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:10",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:10",
                 "index": 10,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Coste por Muerte \\(1x Re-Gear\\)/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:39.816Z",
-                "durationMs": 17,
+                "startedAt": "2026-10-15T07:43:42.458Z",
+                "durationMs": 12,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3602,14 +3602,14 @@
                 }
               },
               {
-                "id": "01a13438-6eeb-7821-8f3b-05e73c02931a:11",
+                "id": "01a13e84-445f-7676-966d-deb7efbf9f89:11",
                 "index": 11,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(/Reserva para 3 Bajas/i)",
                 "status": "passed",
-                "startedAt": "2026-10-13T07:44:39.833Z",
-                "durationMs": 21,
+                "startedAt": "2026-10-15T07:43:42.470Z",
+                "durationMs": 72,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -3646,7 +3646,7 @@
       "maxAgentContextBytes": 0,
       "maxLedgerBytes": 0,
       "maxObservationBytes": 0,
-      "artifactBytes": 16180430,
+      "artifactBytes": 18675449,
       "downloads": 0,
       "events": 0,
       "modelTokens": 0,
